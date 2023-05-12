@@ -123,11 +123,11 @@ async def create_botlog(client):
     if HAPP is None:
         return
     LOGGER("rams").info(
-        "SEBENTAR YA KENTOD, GUA LAGI BIKIN GRUPLOG BUAT LU."
+        "SEBENTAR YA KENTOD, GUA LAGI BIKIN GRUP LOGS BUAT LU KONTOL."
     )
-    desc = "Group Log untuk RamPyro-Bot.\n\nHARAP JANGAN KELUAR DARI GROUP INI.\n\n⭐ Powered By ~ @userbotch ⭐"
+    desc = "Group Log untuk Uputt-Project.\n\nHARAP JANGAN KELUAR DARI GROUP INI.\n\n🐣 Powered By ~ @amneseey0u 🐣"
     try:
-        gruplog = await client.create_supergroup("Logs RamPyro-Bot", desc)
+        gruplog = await client.create_supergroup("Uputt-Project Logs", desc)
         if await in_heroku():
             heroku_var = HAPP.config()
             heroku_var["BOTLOG_CHATID"] = gruplog.id
