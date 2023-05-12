@@ -38,23 +38,23 @@ async def _callbacks(_, callback_query: CallbackQuery):
         if callback_query.from_user.id not in users:
            return
         await app.edit_inline_text(callback_query.inline_message_id, f"𝗥𝗮𝗺𝗣𝘆𝗿𝗼-𝗠𝗮𝘀𝘁𝗲𝗿 \n"
-            "ㅤ⋙ sᴛᴀᴛᴜs : 𝗔𝗸𝘁𝗶𝗳!!! \n"
-            f"ㅤㅤ⋙ ᴍᴏᴅᴜʟᴇs: </b> <code>{len(modules)} </code> \n"
-            f"ㅤㅤ⋙ ᴠᴇʀsɪ ʙᴏᴛ: {BOT_VER} \n"
-            f"ㅤㅤ⋙ ʙʀᴀɴᴄʜ: {branch} \n"
-            f"ㅤㅤ⋙ ᴠᴇʀsɪ ᴘʏʀᴏ: </b> <code>{pyrover}</code>\n"
-            f"ㅤㅤ⋙ ᴠᴇʀsɪ ᴘʏᴛʜᴏɴ: </b> <code>{pyver.split()[0]}</code>",
+            "ㅤ❏  Status : Uputt-Project Aktif!!! \n"
+            f"ㅤㅤ├ Modules: </b> <code>{len(modules)} </code> \n"
+            f"ㅤㅤ├ Bot Version: {BOT_VER} \n"
+            f"ㅤㅤ├ Branch: {branch} \n"
+            f"ㅤㅤ├ Pyrogram Version: </b> <code>{pyrover}</code>\n"
+            f"ㅤㅤ├ Python Version: </b> <code>{pyver.split()[0]}</code>",
             reply_markup=InlineKeyboardMarkup(
-                [[InlineKeyboardButton(text="❈ sᴜᴘᴘᴏʀᴛ ❈", url="t.me/GeezRam"), InlineKeyboardButton(text="❈ ʀᴇᴘᴏ ❈", url="https://github.com/GeezRampy/Ram-Pyro")], [InlineKeyboardButton(text="❈ ʙᴜᴋᴀ ʟᴀɢɪ ❈", callback_data="helper")]]
+                [[InlineKeyboardButton(text="sᴜᴘᴘᴏʀᴛ", url="t.me/uputtSupport"), InlineKeyboardButton(text="ᴄʜᴀɴɴᴇʟ", url="https://t.me/amneseey0u")], [InlineKeyboardButton(text="ᴛᴇᴋᴀɴ ᴀᴊᴀ", callback_data="helper")]]
             ),
         )
         return
     elif query == "tutup":
         if callback_query.from_user.id not in users:
            return
-        await app.edit_inline_text(callback_query.inline_message_id, "⋙ MENUTUP HELP ⋘",
+        await app.edit_inline_text(callback_query.inline_message_id, "CLOSE",
             reply_markup=InlineKeyboardMarkup(
-                [[InlineKeyboardButton(text="❈ ʙᴜᴋᴀ ʟᴀɢɪ ❈", callback_data="close")]]
+                [[InlineKeyboardButton(text="ᴛᴇᴋᴀɴ ᴀᴊᴀ", callback_data="close")]]
             ),
         )
         return
@@ -63,9 +63,9 @@ async def _callbacks(_, callback_query: CallbackQuery):
            return
         await app.edit_inline_text(
             callback_query.inline_message_id,
-            "**⋙ MENU TELAH DITUTUP ⋘**",
+            "**MENU TELAH DITUTUP**",
             reply_markup=InlineKeyboardMarkup(
-                [[InlineKeyboardButton(text="⇕ ʙᴜᴋᴀ ʟᴀɢɪ ⇕", callback_data="reopen")], [InlineKeyboardButton(text="⇕ ᴛᴜᴛᴜᴘ ᴀᴊᴀ ⇕", callback_data="tutup")]]
+                [[InlineKeyboardButton(text="ᴛᴇᴋᴀɴ ᴀᴋᴀ", callback_data="reopen")], [InlineKeyboardButton(text="ᴄʟᴏsᴇ", callback_data="tutup")]]
             ),
         )
         return
@@ -96,12 +96,12 @@ async def _callbacks(_, callback_query: CallbackQuery):
 async def on_plug_in_cb(_, callback_query: CallbackQuery):
     modul_name = callback_query.matches[0].group(1)
     commands: dict = CMD_HELP[modul_name]
-    this_command = f"**《✧ {str(modul_name).upper()} ✧》**\n\n"
+    this_command = f"** 〆{str(modul_name).upper()} 〆**\n\n"
     for x in commands:
-        this_command += f"**ᴄᴍᴅ:\n├⋟** `{str(x)}`\n**└⋟ Fungsi:** `{str(commands[x])}`\n\n"
-    this_command += "© @GeezRam | @UserbotCh"
+        this_command += f"**CMD:\n** `{str(x)}`\n** Fungsi:** `{str(commands[x])}`\n\n"
+    this_command += "© @amneseey0u"
     bttn = [
-        [InlineKeyboardButton(text="⇕ ʙᴀᴄᴋ ⇕", callback_data="reopen"), InlineKeyboardButton(text="⇕ ᴛᴜᴛᴜᴘ ⇕", callback_data="close")],
+        [InlineKeyboardButton(text="ʙᴀᴄᴋ", callback_data="reopen"), InlineKeyboardButton(text="ᴄʟᴏsᴇ", callback_data="close")],
     ]
     reply_pop_up_alert = (
         this_command
