@@ -39,7 +39,7 @@ def paginate_help(page_number, loaded_modules, prefix):
                 InlineKeyboardButton(
                     text="⇚", callback_data=f"{prefix}_prev({modulo_page})"),
                 InlineKeyboardButton(
-                    text="ᴛᴜᴛᴜᴘ", callback_data=f"close_help"),
+                    text="ᴄʟᴏsᴇ", callback_data=f"close_help"),
                 InlineKeyboardButton(
                     text="⇛", callback_data=f"{prefix}_next({modulo_page})"),
             )
@@ -52,7 +52,7 @@ def cb_wrapper(func):
         users = list_users
         if cb.from_user.id not in users:
             await cb.answer(
-                "Jangan Pencet² plis, Jiji anjing!!!",
+                "Anda Harus Menjadi Pengguna Uputt-Project Terlebih Dahulu🤪!!!",
                 cache_time=0,
                 show_alert=True,
             )
@@ -82,7 +82,7 @@ def inline_wrapper(func):
                 results=[
                     (
                         InlineQueryResultArticle(
-                            title="Lu siapasi bangsat,bikin sndiri lah di @GeezRam",
+                            title="Lu siapasi bangsat,bikin sndiri lah di @UputtSupport",
                             input_message_content=InputTextMessageContent(
                                 "Maaf anda tidak ada akses untuk menggunakan bot"
                             ),
