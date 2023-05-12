@@ -40,9 +40,9 @@ del _GCAST_BLACKLIST
 @pyram("gcast", ram)
 async def gcast_cmd(client: Client, message: Message):
     if message.reply_to_message or get_arg(message):
-        Man = await edit_or_reply(message, "`Limit Jangan salahin Gua tod, Proses menyebarkan pesan...`")
+        Man = await edit_or_reply(message, "`Limit Jangan Salahin Gua Tod, Started global broadcast...`")
     else:
-        return await message.edit_text("**Pesannya Mana ngentod**")
+        return await message.edit_text("**Reply lah anjeng**")
     done = 0
     error = 0
     async for dialog in client.get_dialogs():
@@ -72,9 +72,9 @@ async def gcast_cmd(client: Client, message: Message):
 @pyram("gucast", ram)
 async def gucast_cmd(client: Client, message: Message):
     if message.reply_to_message or get_arg(message):
-        Man = await edit_or_reply(message, "`Limit Jangan Salahin gua tod, sedang menyebarkan pesan...`")
+        Man = await edit_or_reply(message, "`Limit Jangan Salahin Gua Tod, Started global broadcast...`")
     else:
-        return await message.edit_text("**Pesannya Mana ngentod**")
+        return await message.edit_text("**Pesannya Mana Tolol**")
     done = 0
     error = 0
     async for dialog in client.get_dialogs():
