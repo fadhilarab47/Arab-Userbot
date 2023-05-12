@@ -30,7 +30,7 @@ async def afk(client: Client, message: Message):
     if len(message.text.split()) >= 2:
         set_afk(True, message.text.split(None, 1)[1])
         await message.edit(
-            "🤖 {} <b>Telah AFK!</b>\n└ <b>Karena:</b> <code>{}</code>".format(
+            "〆 {} <b>Telah AFK!</b>\n└ <b>Karena:</b> <code>{}</code>".format(
                 mention_markdown(message.from_user.id, message.from_user.first_name),
                 message.text.split(None, 1)[1],
             )
@@ -38,7 +38,7 @@ async def afk(client: Client, message: Message):
     else:
         set_afk(True, "")
         await message.edit(
-            "⭐ {} <b>Telah AFK</b> ⭐".format(
+            "〆 {} <b>Telah AFK</b> ".format(
                 mention_markdown(message.from_user.id, message.from_user.first_name)
             )
         )
@@ -61,7 +61,7 @@ async def afk_mentioned(client: Client, message: Message):
         AFK_RESTIRECT[cid] = int(time.time()) + DELAY_TIME
         if get["reason"]:
             await message.reply(
-                "🤖 {} <b>Sedang AFK!</b>\n└ <b>Karena:</b> <code>{}</code>".format(
+                "〆 {} <b>Sedang AFK!</b>\n└ <b>Karena:</b> <code>{}</code>".format(
                     client.me.mention, get["reason"]
                 )
             )
