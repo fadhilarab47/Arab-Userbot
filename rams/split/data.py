@@ -4,10 +4,10 @@ modules = CMD_HELP
 class Data:
 
     text_help_menu = (
-        f"**Menu Inline Ram-Pyro**\n**Perintah :** ? ! . * , $"
+        f"**Menu Inline Uputt-Project**\n**Perintah :** ? ! . * , $"
         .replace(",", "")
         .replace("[", "")
         .replace("]", "")
         .replace("'", "")
     )
-    reopen = [[InlineKeyboardButton("⇕ ʙᴜᴋᴀ ⇕", callback_data="reopen")]]
+    reopen = [[InlineKeyboardButton("ᴘᴇɴᴄᴇᴛ ᴀᴊᴀ", callback_data="reopen")]]
