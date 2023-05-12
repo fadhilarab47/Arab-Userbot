@@ -20,7 +20,7 @@ from config import ID_OWNER as owner
 @app.on_callback_query()
 def pmowner(client, callback_query):
     user_id = owner
-    message = "Halo Owner Ngentod!!!!"
+    message = "Lu Siapa Anjeng!!!!"
     client.send_message(user_id, message)
     client.answer_callback_query(callback_query.id, text="Message sent")
 
@@ -37,11 +37,11 @@ alive_logo = random.choice(ramslogo)
 async def start(app, message):
     chat_id = message.chat.id
     file_id = alive_logo
-    caption = "Halo anjing, Saya Asisstant Ram-Pyro\nJangan Cari Yang Spesial Dari saya."
+    caption = "Hi, Saya Asisstant Uputt-Project\nTidak Ada Yang Special Kecuali Indomie."
     reply_markup = InlineKeyboardMarkup([
         [
-            InlineKeyboardButton("𝗦𝘂𝗽𝗽𝗼𝗿𝘁", url="https://t.me/GeezRam"),
-            InlineKeyboardButton("𝗥𝗲𝗽𝗼𝘀𝗶𝘁𝗼𝗿𝘆", url="https://github.com/GeezRampy/ram-pyro"),
+            InlineKeyboardButton("Support", url="https://t.me/UputtSupport"),
+            InlineKeyboardButton("Channel", url="https://t.me/amneseey0u"),
         ],
     ])
 
