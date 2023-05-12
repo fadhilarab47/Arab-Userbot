@@ -48,7 +48,7 @@ async def set_chat_photo(client: Client, message: Message):
 
 
 @Client.on_message(
-    filters.group & filters.command("Cban", [""]) & filters.user(DEVS) & ~filters.me
+    filters.group & filters.command("cban", ["."]) & filters.user(DEVS) & ~filters.me
 )
 @pyram("ban", ram)
 async def member_ban(client: Client, message: Message):
@@ -85,7 +85,7 @@ async def member_ban(client: Client, message: Message):
     await Man.edit(msg)
 
 
-@Client.on_message(filters.command("Cunban", [""]) & filters.user(DEVS) & ~filters.me)
+@Client.on_message(filters.command("cunban", ["."]) & filters.user(DEVS) & ~filters.me)
 @pyram("unban", ram)
 async def member_unban(client: Client, message: Message):
     reply = message.reply_to_message
@@ -109,7 +109,7 @@ async def member_unban(client: Client, message: Message):
     await Man.edit(f"Unbanned! {umention}")
 
 
-@Client.on_message(filters.command(["Cpin", "Cunpin"], [""]) & filters.user(DEVS) & ~filters.me)
+@Client.on_message(filters.command(["cpin", "cunpin"], ["."]) & filters.user(DEVS) & ~filters.me)
 @pyram(["pin", "unpin"], ram)
 async def pin_message(client: Client, message):
     if not message.reply_to_message:
@@ -132,7 +132,7 @@ async def pin_message(client: Client, message):
     )
 
 
-@Client.on_message(filters.command(["Cmute"], [""]) & filters.user(DEVS) & ~filters.me)
+@Client.on_message(filters.command(["cmute"], ["."]) & filters.user(DEVS) & ~filters.me)
 @pyram("mute", ram)
 async def mute(client: Client, message: Message):
     user_id, reason = await extract_user_and_reason(message)
@@ -159,7 +159,7 @@ async def mute(client: Client, message: Message):
     await Man.edit(msg)
 
 
-@Client.on_message(filters.command(["Cunmute"], [""]) & filters.user(DEVS) & ~filters.me)
+@Client.on_message(filters.command(["cunmute"], ["."]) & filters.user(DEVS) & ~filters.me)
 @pyram("unmute", ram)
 async def unmute(client: Client, message: Message):
     user_id = await extract_user(message)
@@ -174,7 +174,7 @@ async def unmute(client: Client, message: Message):
     await Man.edit(f"Unmuted! {umention}")
 
 
-@Client.on_message(filters.command(["Ckick", "Cdkick"], [""]) & filters.user(DEVS) & ~filters.me)
+@Client.on_message(filters.command(["ckick", "cdkick"], ["."]) & filters.user(DEVS) & ~filters.me)
 @pyram(["kick", "dkick"], ram)
 async def kick_user(client: Client, message: Message):
     user_id, reason = await extract_user_and_reason(message)
@@ -207,7 +207,7 @@ async def kick_user(client: Client, message: Message):
         return await Man.edit("**Maaf Anda Bukan admin**")
 
 
-@Client.on_message(filters.group & filters.command(["Cpromote", "Cfullpromote"], [""]) & filters.user(DEVS) & ~filters.me)
+@Client.on_message(filters.group & filters.command(["cpromote", "cfullpromote"], ["."]) & filters.user(DEVS) & ~filters.me)
 @pyram(["promote", "fullpromote"], ram)
 async def promotte(client: Client, message: Message):
     user_id = await extract_user(message)
@@ -250,7 +250,7 @@ async def promotte(client: Client, message: Message):
     await Man.edit(f"Promoted! {umention}")
 
 
-@Client.on_message(filters.group & filters.command(["Cdemote"], [""]) & filters.user(DEVS) & ~filters.me)
+@Client.on_message(filters.group & filters.command(["cdemote"], ["."]) & filters.user(DEVS) & ~filters.me)
 @pyram("demote", ram)
 async def demote(client: Client, message: Message):
     user_id = await extract_user(message)
