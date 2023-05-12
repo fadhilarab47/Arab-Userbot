@@ -66,9 +66,9 @@ async def alive_function(message: Message, answers):
     end = datetime.now()
     duration = (end - start).microseconds / 1000
     msg = (
-        f"☞ 𝗥𝗮𝗺𝗣𝘆𝗿𝗼-𝗕𝗼𝘁!!✨\n\n"
-        f"☞ 𝗦𝗶𝗴𝗻𝗮𝗹: %sms\n"
-        f"☞ 𝗨𝗽𝘁𝗶𝗺𝗲: </b> <code>{uptime}</code>" % (duration)
+        f"❏ Uputt-Project!!\n\n"
+        f"├ PING: %sms\n"
+        f"├ Uptime: </b> <code>{uptime}</code>" % (duration)
     )
     answers.append(
         InlineQueryResultArticle(
@@ -79,7 +79,7 @@ async def alive_function(message: Message, answers):
                 msg, parse_mode=ParseMode.HTML, disable_web_page_preview=True
             ),
             reply_markup=InlineKeyboardMarkup(
-                [[InlineKeyboardButton("☬ 𝗠𝗮𝘀𝘁𝗲𝗿 ☬", url=f"tg://openmessage?user_id={message.from_user.id}")]]
+                [[InlineKeyboardButton("Sepuh", url=f"tg://openmessage?user_id={message.from_user.id}")]]
             ),
         )
     )
@@ -87,24 +87,24 @@ async def alive_function(message: Message, answers):
 
 async def ping_function(message: Message, answers):
     msg = (
-        f"𝗥𝗮𝗺𝗣𝘆𝗿𝗼-𝗠𝗮𝘀𝘁𝗲𝗿 \n"
-        "ㅤ⋙ sᴛᴀᴛᴜs : 𝗔𝗸𝘁𝗶𝗳!!! \n"
-        f"ㅤㅤ⋙ ᴍᴏᴅᴜʟᴇs: </b> <code>{len(modules)} </code> \n"
-        f"ㅤㅤ⋙ ᴠᴇʀsɪ ʙᴏᴛ: {BOT_VER} \n"
-        f"ㅤㅤ⋙ ʙʀᴀɴᴄʜ: {branch} \n"
-        f"ㅤㅤ⋙ ᴠᴇʀsɪ ᴘʏʀᴏ: </b> <code>{pyrover}</code>\n"
-        f"ㅤㅤ⋙ ᴠᴇʀsɪ ᴘʏᴛʜᴏɴ: </b> <code>{pyver.split()[0]}</code>"
+        f"Uputt-Project \n"
+        "ㅤ ❏ Status : Uputt-Project Aktif!!! \n"
+        f"ㅤㅤ├ Modules: </b> <code>{len(modules)} </code> \n"
+        f"ㅤㅤ├ Bot Version: {BOT_VER} \n"
+        f"ㅤㅤ├ Branch: {branch} \n"
+        f"ㅤㅤ├ Pyrogram Version: </b> <code>{pyrover}</code>\n"
+        f"ㅤㅤ├ Python Version: </b> <code>{pyver.split()[0]}</code>"
     )
     answers.append(
         InlineQueryResultArticle(
-            title="rama",
+            title="uputt",
             description="Check Bot's Stats",
             thumb_url="https://telegra.ph/file/c78bb1efdeed38ee16eb2.png",
             input_message_content=InputTextMessageContent(
                 msg, parse_mode=ParseMode.HTML, disable_web_page_preview=True
             ),
             reply_markup=InlineKeyboardMarkup(
-                [[InlineKeyboardButton(text="༺ Oᴡɴᴇʀ ༻", url=f"tg://openmessage?user_id={message.from_user.id}")]]
+                [[InlineKeyboardButton(text="Owner", url=f"tg://openmessage?user_id={message.from_user.id}")]]
             ),
         )
     )
@@ -112,24 +112,24 @@ async def ping_function(message: Message, answers):
 
 async def repo_function(message: Message, answers):
     msg = (
-        f"╭✠╼━━━━━━━━━━━━━━━\n"
-        f"│ ✨ 𝗥𝗮𝗺𝗣𝘆𝗿𝗼-𝗕𝗼𝘁 ✨\n"
-        f"├✠╼━━━━━━━━━━━━━━━\n"
-        f"│★ 𝗕𝗼𝘁 𝗩𝗲𝗿    : {BOT_VER}\n"
-        f"│★ 𝗕𝗿𝗮𝗻𝗰𝗵     : {branch}\n"
-        f"╰✠╼━━━━━━━━━━━━━━━━\n"
-        f"©️ Geez|Ram Projects"
+        f"╭╼━━━━━━━━━━━━━━━\n"
+        f"│   Uputt-Project \n"
+        f"├╼━━━━━━━━━━━━━━━\n"
+        f"│ Bot Version    : {BOT_VER}\n"
+        f"│ Branch     : {branch}\n"
+        f"╰╼━━━━━━━━━━━━━━━━\n"
+        f"©️ Uputt-Project"
     )
     answers.append(
         InlineQueryResultArticle(
-            title="repo",
+            title="channel",
             description="Check Bot's Stats",
             thumb_url="https://telegra.ph/file/c78bb1efdeed38ee16eb2.png",
             input_message_content=InputTextMessageContent(
                 msg, parse_mode=ParseMode.HTML, disable_web_page_preview=True
             ),
             reply_markup=InlineKeyboardMarkup(
-                [[InlineKeyboardButton(text="⚜ 𝗥𝗲𝗽𝗼 ⚜", url=f"https://github.com/izzy-adeeva/rampyro-master")], [InlineKeyboardButton(text="⚜ 𝗟𝗶𝗰𝗲𝗻𝘀𝗲 ⚜", url=f"https://github.com/izzy-adeeva/rampyro-master/blob/master/LICENSE")]]
+                [[InlineKeyboardButton(text="Channel", url=f"https://t.me/amneseey0u")], [InlineKeyboardButton(text="Support", url=f"https://t.me/UputtSupport")]]
             ),
         )
     )
@@ -166,10 +166,10 @@ async def inline_query_handler(client: Client, query):
         elif string_given.startswith("helper"):
             answers = await help_function(answers)
             await client.answer_inline_query(query.id, results=answers, cache_time=0)
-        elif string_given.startswith("rama"):
+        elif string_given.startswith("uputt"):
             answers = await ping_function(query, answers)
             await client.answer_inline_query(query.id, results=answers, cache_time=0)
-        elif string_given.startswith("repo"):
+        elif string_given.startswith("channel"):
             answers = await repo_function(query, answers)
             await client.answer_inline_query(query.id, results=answers, cache_time=0)
     except Exception as e:
