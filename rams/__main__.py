@@ -11,12 +11,12 @@ from rams.modules import ALL_MODULES
 
 
 MSG_ON = """
-🔥 **RamPyro-Bot Menyala** 🔥
-━───────╯⇕╰───────━
-🤖 **Userbot Version -** `{}`
-⚜️ prefixes: ? ! , . *
-⌨️ **Ketik** `{}alive` **untuk Mengecheck Bot**
-━───────╮⇕╭───────━
+〆 **Uputt-Project Di Aktifkan** 〆
+╼┅━━━━━━━━━━╍━━━━━━━━━━┅╾
+㋱ **Userbot Version -** `{}`
+㋱ Prefixes: ? ! , . *
+㋱ **Ketik** `{}alive` **untuk Mengecek Bot**
+╼┅━━━━━━━━━━╍━━━━━━━━━━┅╾
 """
 
 async def main():
@@ -28,10 +28,11 @@ async def main():
             await bot.start()
             bot.me = await bot.get_me()
             ids.append(bot.me.id)
-            await bot.join_chat("GeezRam")
-            await bot.join_chat("userbotch")
-            await bot.join_chat("GeezSupport")
-            await bot.join_chat("temen_rendem")
+            await bot.join_chat("UputtSupport")
+            await bot.join_chat("amneseey0u")
+            await bot.join_chat("Chnlluxh")
+            await bot.join_chat("Flukosaa")
+            await bot.join_chat("SharingUserbot")
             try:
                 await bot.send_message(
                     BOTLOG_CHATID, MSG_ON.format(BOT_VER, CMD_HANDLER)
@@ -43,7 +44,7 @@ async def main():
             )
         except Exception as a:
             LOGGER("main").warning(a)
-    LOGGER("rams").info(f"RamPyro-Bot v{BOT_VER} [🔥 UDAH AKTIF NGENTOT! 🔥]")
+    LOGGER("rams").info(f"Uputt-Project v{BOT_VER} [ UDAH AKTIF SAYANG:*! ]")
     if not str(BOTLOG_CHATID).startswith("-100"):
         await create_botlog(bot1)
     await idle()
@@ -51,7 +52,7 @@ async def main():
 
 
 if __name__ == "__main__":
-    LOGGER("rams").info("Starting RamPyro-Bot")
+    LOGGER("rams").info("Starting Uputt-Project")
     install()
     heroku()
     LOOP.run_until_complete(main())
