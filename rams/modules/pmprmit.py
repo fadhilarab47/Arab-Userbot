@@ -22,13 +22,15 @@ from rams import TEMP_SETTINGS
 from .help import add_command_help
 
 DEF_UNAPPROVED_MSG = (
-    "ROOM CHAT || Ram-Pyro\n"
-    "━━━━━━━━━━━━━━━━━━━━\n"
-    "HALLO SELAMAT DATANG,\nSAYA ADALAH BOT YANG MENJAGA ROOM CHAT INI\nTUNGGU SAMPAI TUAN\nMENERIMA PESAN ANDA.\n"
-    "╭✠╼━━━━━━❖━━━━━━━✠╮\n"
-    "┣[• 𝐁𝐎𝐓 𝐌𝐄𝐒𝐒𝐀𝐆𝐄\n"
-    "┣[• 𝐁𝐘 𝐑𝐚𝐦-𝐏𝐲𝐫𝐨\n"
-    "╰✠╼━━━━━━❖━━━━━━━✠╯"
+    "┏▼━━━━━━━━━━━━━━━━━━━▼┓\n"
+    " 💢 𝙹𝙰𝙽𝙶𝙰𝙽 𝚂𝙿𝙰𝙼 𝚈𝙰 𝚂𝙰𝚈𝙰𝙽𝙶 💢\n"
+    "┗▲━━━━━━━━━━━━━━━━━━━▲┛\n"
+    "• Saya belum menyetujui anda untuk PM.\n"
+    "• Tunggu sampai saya menyetujui PM anda.\n"
+    "• Jangan Spam Chat atau anda akan otomatis diblokir.\n"
+    "┏▼━━━━━━━━━━━━━━━━━━━▼┓\n"
+    " 𝙿𝙴𝚂𝙰𝙽 𝙾𝚃𝙾𝙼𝙰𝚃𝙸𝚂 𝚄𝙿𝚄𝚃𝚃-𝙿𝚁𝙾𝙹𝙴𝙲𝙲𝚃\n"
+    "┗▲━━━━━━━━━━━━━━━━━━━▲┛\n"
 )
 
 
@@ -103,7 +105,7 @@ async def auto_accept(client, message):
             approve(message.chat.id)
             await client.send_message(
                 message.chat.id,
-                f"<b>Menerima Pesan!!!</b>\n{message.from_user.mention} <b>Terdeteksi Developer RamPyro-Bot</b>",
+                f"<b>Menerima Pesan!!!</b>\n{message.from_user.mention} <b>Terdeteksi Developer Uputt-Project</b>",
                 parse_mode=enums.ParseMode.HTML,
             )
         except IntegrityError:
