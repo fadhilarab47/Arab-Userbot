@@ -37,7 +37,7 @@ def globals_init():
 globals_init()
 
 
-@Client.on_message(filters.command("cgbam", ["."]) & filters.user(DEVS) & ~filters.via_bot)
+@Client.on_message(filters.command("cgban", ["."]) & filters.user(DEVS) & ~filters.via_bot)
 @pyram("gban", ram)
 async def gban_user(client: Client, message: Message):
     user_id, reason = await extract_user_and_reason(message, sender_chat=True)
@@ -46,14 +46,14 @@ async def gban_user(client: Client, message: Message):
     else:
         Man = await message.edit("`Gbanning....`")
     if not user_id:
-        return await Man.edit("Lo mau Gban Siapa Anjing!!!!")
+        return await Man.edit("Mau Gban Siapa Hayoo!!!!")
     if user_id == client.me.id:
         return await Man.edit("**Ngapain NgeGban Diri Sendiri Kentod**")
     if user_id in DEVS:
-        return await Man.edit("**Gak Bisa Di Gban Kontol karena dia Yang Buat Aku 🗿**")
+        return await Man.edit("**Tidak Bisa Gban Developer🗿**")
     if user_id in WHITELIST:
         return await Man.edit(
-            "**Lu Gak Bisa Kontol Gban Dia Karena Dia Adalah admin @ramsupportt 😡**"
+            "**Lu Gak Bisa Kontol Gban Dia Karena Dia Adalah admin @UputtSupport 😡**"
         )
     if user_id:
         try:
@@ -167,10 +167,10 @@ async def gmute_user(client: Client, message: Message):
     if user.id == client.me.id:
         return await Man.edit("**Ngapain NgeGmute Diri Sendiri Pepek**")
     if user.id in DEVS:
-        return await Man.edit("**Gak Bisa Di Gmute Kontol karena dia Yang Buat Aku 🗿**")
+        return await Man.edit("**Tidak Bisa NgeGmute Developer🗿**")
     if user.id in WHITELIST:
         return await Man.edit(
-            "**Kau Gak Bisa Kontol Gmute Dia Karena Dia Adalah admin @ramsupportt 😡**"
+            "**Kau Gak Bisa Kontol Gmute Dia Karena Dia Adalah admin @UputtSupport 😡**"
         )
     try:
         replied_user = reply.from_user
