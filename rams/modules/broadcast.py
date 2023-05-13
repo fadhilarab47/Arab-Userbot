@@ -42,7 +42,7 @@ async def gcast_cmd(client: Client, message: Message):
     if message.reply_to_message or get_arg(message):
         Man = await edit_or_reply(message, "`Limit Jangan Salahin Gua Tod, Started global broadcast...`")
     else:
-        return await message.edit_text("**Reply lah anjeng**")
+        return await message.edit_text("**Pesan Nya Mana Tolollll🔪**")
     done = 0
     error = 0
     async for dialog in client.get_dialogs():
@@ -74,7 +74,7 @@ async def gucast_cmd(client: Client, message: Message):
     if message.reply_to_message or get_arg(message):
         Man = await edit_or_reply(message, "`Limit Jangan Salahin Gua Tod, Started global broadcast...`")
     else:
-        return await message.edit_text("**Pesannya Mana Tolol**")
+        return await message.edit_text("**Pesannya Mana Tolollll🔪**")
     done = 0
     error = 0
     async for dialog in client.get_dialogs():
@@ -96,7 +96,7 @@ async def gucast_cmd(client: Client, message: Message):
                     error += 1
                     await asyncio.sleep(0.3)
     await Man.edit_text(
-        f"**Berhasil Mengirim Pesan Ke** `{done}` **chat, Gagal Mengirim Pesan Ke** `{error}` **chat**"
+        f"**Berhasil Mengirim Pesan Ke** `{done}` **Chat, Gagal Mengirim Pesan Ke** `{error}` **chat**"
     )
 
 
