@@ -468,7 +468,7 @@ add_command_help(
 )
 
 add_command_help(
-    "alip",
+    "alive",
     [
         ["botme", "untuk menampilkan dekorasi gajelas😂."],
         ["setalivelogo", "Untuk Mengubah Text Alive."],
