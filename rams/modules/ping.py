@@ -44,7 +44,7 @@ from .help import add_command_help
 
 modules = CMD_HELP
 alive_logo = (
-    gvarstatus("ALIVE_LOGO") or "https://telegra.ph/file/d370f45bf3ff8fa0cba8f.jpg"
+    gvarstatus("ALIVE_LOGO") or "https://telegra.ph/file/6d909b4a1b7b0385c1dfe.jpg"
 )
     
 
@@ -94,28 +94,42 @@ async def pingme(client: Client, message: Message):
     uptime = await get_readable_time((time.time() - StartTime))
     start = datetime.now()
     rams = await message.reply("**Mengecek Sinyal...**")
-    await rams.edit("**▁**")
-    await rams.edit("**▁ ▂**")
-    await rams.edit("**▁ ▂ ▄**")
-    await rams.edit("**▁ ▂ ▄ ▅**")
-    await rams.edit("**▁ ▂ ▄ ▅ ▆**")
-    await rams.edit("**▁ ▂ ▄ ▅ ▆ ▇**")
-    await rams.edit("**▁ ▂ ▄ ▅ ▆ ▇ █**")
-    await rams.edit("⚡")
+    **")
+    await xx.edit("8=✊==D")
+    await xx.edit("8==✊=D")
+    await xx.edit("8===✊D")
+    await xx.edit("8==✊=D")
+    await xx.edit("8=✊==D")
+    await xx.edit("8✊===D")
+    await xx.edit("8=✊==D")
+    await xx.edit("8==✊=D")
+    await xx.edit("8===✊D")
+    await xx.edit("8==✊=D")
+    await xx.edit("8=✊==D")
+    await xx.edit("8✊===D")
+    await xx.edit("8=✊==D")
+    await xx.edit("8==✊=D")
+    await xx.edit("8===✊D")
+    await xx.edit("8===✊D💦")
+    await xx.edit("8====D💦💦")
+    await xx.edit("**CROOTTTT**")
+    await xx.edit("**CROOTTTT AAAHHH.....**")
+    await xx.edit("AHHH ENAKKKKK SAYANGGGG🥵🥵")
+    await rams.edit("🥵")
     await asyncio.sleep(2.5)
     end = datetime.now()
     duration = (end - start).microseconds / 1000
     await rams.edit(
-        f"**𝗣𝘆𝗿𝗼-𝗠𝗮𝘀𝘁𝗲𝗿**\n"
-        f"** ➠  Sɪɢɴᴀʟ   :** "
+        f"**❏Uputt-Project**\n"
+        f"** ├• PING   :** "
         f"`%sms` \n"
-        f"** ➠  Uᴘᴛɪᴍᴇ  :** "
+        f"** ├•  Uptime  :** "
         f"`{uptime}` \n"
-        f"** ➠  Oᴡɴᴇʀ   :** {client.me.mention}" % (duration)
+        f"** ├•  Dajjal   :** {client.me.mention}" % (duration)
     )
 
 
-@Client.on_message(filters.command("dping", ["."]) & filters.user(DEVS) & ~filters.me)
+@Client.on_message(filters.command("Cping", [""]) & filters.user(DEVS) & ~filters.me)
 @pyram("ping", ram)
 async def module_ping(client: Client, message: Message):
     rams = await edit_or_reply(message, "✨")
