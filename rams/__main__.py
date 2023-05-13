@@ -15,7 +15,7 @@ MSG_ON = """
 ╼┅━━━━━━━━━━╍━━━━━━━━━━┅╾
 ㋱ **Userbot Version -** `{}`
 ㋱ Prefixes: ? ! , . *
-㋱ **Ketik** `{}alive` **untuk Mengecek Bot**
+㋱ **Ketik** `{}uputt` **untuk Mengecek Bot**
 ╼┅━━━━━━━━━━╍━━━━━━━━━━┅╾
 """
 
