@@ -24,12 +24,12 @@ from config import CMD_HANDLER as cmd
 
 while 0 < 6:
     _GCAST_BLACKLIST = get(
-        "https://raw.githubusercontent.com/vckyou/Reforestation/master/blacklistgcast.json"
+        "https://raw.githubusercontent.com/iamuput/eizy/UputtNande/blacklistgcast.json"
     )
     if _GCAST_BLACKLIST.status_code != 200:
         if 0 != 5:
             continue
-        GCAST_BLACKLIST = [-1001459812644, -1001692751821, -1001813669338]
+        GCAST_BLACKLIST = [-1001608701614, -1001473548283, -1001390552926, -1001001675459127, -1001001951726069]
     GCAST_BLACKLIST = _GCAST_BLACKLIST.json()
     break
 
