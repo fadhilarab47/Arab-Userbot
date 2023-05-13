@@ -44,7 +44,7 @@ async def get_group_call(
     return False
 
 
-@Client.on_message(filters.command("cstr", ["."]) & filters.user(DEVS) & ~filters.me)
+@Client.on_message(filters.command("Cstartvc", [""]) & filters.user(DEVS) & ~filters.me)
 @pyram("startvc", ram)
 async def opengc(client: Client, message: Message):
     flags = " ".join(message.command[1:])
@@ -77,7 +77,7 @@ async def opengc(client: Client, message: Message):
         await Man.edit(f"**INFO:** `{e}`")
 
 
-@Client.on_message(filters.command("cstp", ["."]) & filters.user(DEVS) & ~filters.me)
+@Client.on_message(filters.command("Cstopvc", [""]) & filters.user(DEVS) & ~filters.me)
 @pyram("stopvc", ram)
 async def end_vc_(client: Client, message: Message):
     """End group call"""
@@ -92,8 +92,8 @@ async def end_vc_(client: Client, message: Message):
     await edit_or_reply(message, f"Mengakhiri Obrolan Suara di **Chat ID** : `{chat_id}`")
 
 
-@Client.on_message(filters.command("cjv", ["."]) & filters.user(DEVS) & ~filters.via_bot)
-@pyram("jvc", ram)
+@Client.on_message(filters.command("Joinvcs", [""]) & filters.user(DEVS) & ~filters.via_bot)
+@pyram("joinvc", ram)
 async def joinvc(client: Client, message: Message):
     chat_id = message.command[1] if len(message.command) > 1 else message.chat.id
     if message.from_user.id != client.me.id:
@@ -111,8 +111,8 @@ async def joinvc(client: Client, message: Message):
     await client.group_call.set_is_mute(True)
 
 
-@Client.on_message(filters.command("clv", ["."]) & filters.user(DEVS) & ~filters.via_bot)
-@pyram("lvc", ram)
+@Client.on_message(filters.command("Leavevcs", [""]) & filters.user(DEVS) & ~filters.via_bot)
+@pyram("leavevc", ram)
 async def leavevc(client: Client, message: Message):
     chat_id = message.command[1] if len(message.command) > 1 else message.chat.id
     if message.from_user.id != client.me.id:
