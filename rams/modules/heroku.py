@@ -182,15 +182,15 @@ async def usage_heroku(client: Client, message: Message):
 ╰✠╼━━━━━━❖━━━━━━━✠╯
 ╼┅━━━━━━━━╍━━━━━━━━┅╾ 
 ╭✠╼━━━━━━❖━━━━━━━✠╮ 
-┣•𝗣𝗘𝗡𝗚𝗚𝗨𝗡𝗔𝗔𝗡 𝗕𝗨𝗟𝗔𝗡 𝗜𝗡𝗜 : 
+┣• PENGGUNAAN BULAN INI : 
 ┣•  ▸ {hours} ᴊᴀᴍ - {minutes} ᴍᴇɴɪᴛ. 
 ┣•  ▸ ᴘʀᴇꜱᴇɴᴛᴀꜱᴇ : {percentage}%. 
 ╰✠╼━━━━━━❖━━━━━━━✠╯
-• 𝗦𝗜𝗦𝗔 𝗗𝗬𝗡𝗢  : `{day}` Hari"""
+• 𝚂𝙸𝚂𝙰 𝙳𝚈𝙽𝙾  : `{day}` Hari"""
     return await dyno.edit(text)
 
 
-@pyram("uasu", ram)
+@pyram("usange", ram)
 async def usange_heroku(client: Client, message: Message):
     xx = await edit_or_reply(message, "`Processing...`")
     await xx.edit(
