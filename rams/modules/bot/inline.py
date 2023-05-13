@@ -74,7 +74,7 @@ async def alive_function(message: Message, answers):
         InlineQueryResultArticle(
             title="Alive",
             description="Check Bot's Stats",
-            thumb_url="https://telegra.ph/file/c78bb1efdeed38ee16eb2.png",
+            thumb_url="https://telegra.ph/file/6d909b4a1b7b0385c1dfe.jpg",
             input_message_content=InputTextMessageContent(
                 msg, parse_mode=ParseMode.HTML, disable_web_page_preview=True
             ),
@@ -99,7 +99,7 @@ async def ping_function(message: Message, answers):
         InlineQueryResultArticle(
             title="uputt",
             description="Check Bot's Stats",
-            thumb_url="https://telegra.ph/file/c78bb1efdeed38ee16eb2.png",
+            thumb_url="https://telegra.ph/file/6d909b4a1b7b0385c1dfe.jpg",
             input_message_content=InputTextMessageContent(
                 msg, parse_mode=ParseMode.HTML, disable_web_page_preview=True
             ),
@@ -124,7 +124,7 @@ async def repo_function(message: Message, answers):
         InlineQueryResultArticle(
             title="channel",
             description="Check Bot's Stats",
-            thumb_url="https://telegra.ph/file/c78bb1efdeed38ee16eb2.png",
+            thumb_url="https://telegra.ph/file/6d909b4a1b7b0385c1dfe.jpg",
             input_message_content=InputTextMessageContent(
                 msg, parse_mode=ParseMode.HTML, disable_web_page_preview=True
             ),
@@ -141,7 +141,7 @@ async def help_function(answers):
         InlineQueryResultArticle(
             title="Help Article!",
             description="Check Command List & Help",
-            thumb_url="https://telegra.ph/file/c78bb1efdeed38ee16eb2.png",
+            thumb_url="https://telegra.ph/file/6d909b4a1b7b0385c1dfe.jpg",
             input_message_content=InputTextMessageContent(
                 Data.text_help_menu.format(len(CMD_HELP))
             ),
