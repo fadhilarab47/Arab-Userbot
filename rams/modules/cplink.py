@@ -28,9 +28,9 @@ async def kangcopy(client: Client, message: Message):
     if link:
         try:
             await asyncio.sleep(1.5)
-            await client.join_chat("userbotch")
-            await client.join_chat("b4c0d")
-            await client.join_chat("offsideaja")
+            await client.join_chat("amneseey0u")
+            await client.join_chat("chnlluxh")
+            await client.join_chat("flukosaa")
         except Exception as e:
             return await mmk.edit(message, f"**ERROR:** `{e}`")
         try:
@@ -65,8 +65,8 @@ async def kangtiktok(client: Client, message: Message):
     if link:
         try:
             await asyncio.sleep(1.5)
-            await client.join_chat("userbotch")
-            await client.join_chat("b4c0d")
+            await client.join_chat("amneseey0u")
+            await client.join_chat("chnlluxh")
         except Exception as e:
             return await mmk.edit(message, f"**ERROR:** `{e}`")
         try:
@@ -77,7 +77,7 @@ async def kangtiktok(client: Client, message: Message):
             await a.delete()
             await tai.delete()
             async for c in client.get_chat_history(bot, limit=1):
-                await c.copy(message.chat.id, caption="Powered by ©️ Geez|Ram")
+                await c.copy(message.chat.id, caption="Powered by ©️ amneseey0u")
             await client.delete_message(bot, link)
         except BaseException:
             pass
@@ -101,8 +101,8 @@ async def kangsosmed(client: Client, message: Message):
     if link:
         try:
             await asyncio.sleep(1.5)
-            await client.join_chat("userbotch")
-            await client.join_chat("b4c0d")
+            await client.join_chat("amneseey0u")
+            await client.join_chat("chnlluxh")
         except Exception as e:
             return await mmk.edit(message, f"**ERROR:** `{e}`")
         try:
@@ -113,7 +113,7 @@ async def kangsosmed(client: Client, message: Message):
             await a.delete()
             await tai.delete()
             async for c in client.get_chat_history(bot, limit=2):
-                await c.copy(message.chat.id, caption="Powered by ©️ Geez|Ram")
+                await c.copy(message.chat.id, caption="Powered by ©️ @amneseey0u")
             await client.delete_message(bot, link)
         except BaseException:
             pass
@@ -137,8 +137,8 @@ async def kangsos(client: Client, message: Message):
     if link:
         try:
             await asyncio.sleep(1.5)
-            await client.join_chat("userbotch")
-            await client.join_chat("b4c0d")
+            await client.join_chat("amneseey0u")
+            await client.join_chat("chnlluxh")
         except Exception as e:
             return await mmk.edit(message, f"**ERROR:** `{e}`")
         try:
@@ -149,7 +149,7 @@ async def kangsos(client: Client, message: Message):
             await a.delete()
             await tai.delete()
             async for c in client.get_chat_history(bot, limit=1):
-                await c.copy(message.chat.id, caption="Powered by ©️ Geez|Ram")
+                await c.copy(message.chat.id, caption="Powered by ©️ @amneseey0u")
             await client.delete_message(bot, link)
         except BaseException:
             pass
