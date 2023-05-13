@@ -25,10 +25,10 @@ def pmowner(client, callback_query):
     client.answer_callback_query(callback_query.id, text="Message sent")
 
 ramslogo = [
-    "https://telegra.ph/file/d03ce0fb84f81be3aeb09.png",
-    "https://telegra.ph/file/200355acbe58c46400f5b.png",
-    "https://telegra.ph/file/c78bb1efdeed38ee16eb2.png",
-    "https://telegra.ph/file/4143843c984a8ecdc813e.png"
+    "https://telegra.ph/file/6d909b4a1b7b0385c1dfe.jpg",
+    "https://telegra.ph/file/17770ad693a43ebeb0fb6.jpg",
+    "https://telegra.ph/file/fd3b8cc06dfd345d96362.jpg",
+    "https://telegra.ph/file/6d909b4a1b7b0385c1dfe.jpg"
 ]
 
 alive_logo = random.choice(ramslogo)
