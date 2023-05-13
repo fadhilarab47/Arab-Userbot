@@ -37,7 +37,7 @@ async def _callbacks(_, callback_query: CallbackQuery):
     elif query == "close":
         if callback_query.from_user.id not in users:
            return
-        await app.edit_inline_text(callback_query.inline_message_id, f"𝗥𝗮𝗺𝗣𝘆𝗿𝗼-𝗠𝗮𝘀𝘁𝗲𝗿 \n"
+        await app.edit_inline_text(callback_query.inline_message_id, f"Uputt-Project \n"
             "ㅤ❏  Status : Uputt-Project Aktif!!! \n"
             f"ㅤㅤ├ Modules: </b> <code>{len(modules)} </code> \n"
             f"ㅤㅤ├ Bot Version: {BOT_VER} \n"
