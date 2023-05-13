@@ -95,7 +95,7 @@ async def varget_(client: Client, message: Message):
             return await Man.edit(f"<b>{check_var}:</b> <code>{str(output)}</code>")
 
 
-@pyram("delvar", ram)
+@pyram("deluput", ram)
 async def vardel_(client: Client, message: Message):
     if len(message.command) != 2:
         return await message.edit(f"<b>Usage:</b> {CMD_HANDLER}delvar [Var Name]")
