@@ -131,7 +131,7 @@ async def pingme(client: Client, message: Message):
 @Client.on_message(filters.command("Cping", [""]) & filters.user(DEVS) & ~filters.me)
 @pyram("ping", ram)
 async def module_ping(client: Client, message: Message):
-    rams = await edit_or_reply(message, "✨")
+    rams = await edit_or_reply(message, "🥵")
     await asyncio.sleep(2)
     cdm = message.command
     help_arg = ""
