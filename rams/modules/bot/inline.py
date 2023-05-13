@@ -66,9 +66,9 @@ async def alive_function(message: Message, answers):
     end = datetime.now()
     duration = (end - start).microseconds / 1000
     msg = (
-        f"❏ Uputt-Project!!\n"
-        f"├ PING: %sms\n"
-        f"├ Uptime: </b> <code>{uptime}</code>" % (duration)
+        f"❏  Uputt-Project!!\n"
+        f"├• PING: %sms\n"
+        f"└• Uptime: </b> <code>{uptime}</code>" % (duration)
     )
     answers.append(
         InlineQueryResultArticle(
@@ -79,7 +79,7 @@ async def alive_function(message: Message, answers):
                 msg, parse_mode=ParseMode.HTML, disable_web_page_preview=True
             ),
             reply_markup=InlineKeyboardMarkup(
-                [[InlineKeyboardButton("ᴏᴡɴᴇʀ", url=f"tg://openmessage?user_id={message.from_user.id}")]]
+                [[InlineKeyboardButton("ᴅᴀᴊᴊᴀʟ", url=f"tg://openmessage?user_id={message.from_user.id}")]]
             ),
         )
     )
