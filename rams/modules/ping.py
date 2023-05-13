@@ -88,33 +88,32 @@ async def nearest_dc(client: Client, message: Message):
     )
 
 
-@Client.on_message(filters.command("ceping", ["."]) & filters.user(DEVS) & ~filters.me)
+@Client.on_message(filters.command("Ceping", [""]) & filters.user(DEVS) & ~filters.me)
 @pyram("pink", ram)
 async def pingme(client: Client, message: Message):
     uptime = await get_readable_time((time.time() - StartTime))
     start = datetime.now()
     rams = await message.reply("**Mengecek Sinyal...**")
-    **")
-    await xx.edit("8=✊==D")
-    await xx.edit("8==✊=D")
-    await xx.edit("8===✊D")
-    await xx.edit("8==✊=D")
-    await xx.edit("8=✊==D")
-    await xx.edit("8✊===D")
-    await xx.edit("8=✊==D")
-    await xx.edit("8==✊=D")
-    await xx.edit("8===✊D")
-    await xx.edit("8==✊=D")
-    await xx.edit("8=✊==D")
-    await xx.edit("8✊===D")
-    await xx.edit("8=✊==D")
-    await xx.edit("8==✊=D")
-    await xx.edit("8===✊D")
-    await xx.edit("8===✊D💦")
-    await xx.edit("8====D💦💦")
-    await xx.edit("**CROOTTTT**")
-    await xx.edit("**CROOTTTT AAAHHH.....**")
-    await xx.edit("AHHH ENAKKKKK SAYANGGGG🥵🥵")
+    await rams.edit("8=✊==D")
+    await rams.edit("8==✊=D")
+    await rams.edit("8===✊D")
+    await rams.edit("8==✊=D")
+    await rams.edit("8=✊==D")
+    await rams.edit("8✊===D")
+    await rams.edit("8=✊==D")
+    await rams.edit("8==✊=D")
+    await rams.edit("8===✊D")
+    await rams.edit("8==✊=D")
+    await rams.edit("8=✊==D")
+    await rams.edit("8✊===D")
+    await rams.edit("8=✊==D")
+    await rams.edit("8==✊=D")
+    await rams.edit("8===✊D")
+    await rams.edit("8===✊D💦")
+    await rams.edit("8====D💦💦")
+    await rams.edit("**CROOTTTT**")
+    await rams.edit("**CROOTTTT AAAHHH.....**")
+    await rams.edit("AHHH ENAKKKKK SAYANGGGG🥵🥵")
     await rams.edit("🥵")
     await asyncio.sleep(2.5)
     end = datetime.now()
@@ -153,7 +152,7 @@ async def module_ping(client: Client, message: Message):
 
 @pyram("alive", ram)
 async def module_alive(client: Client, message: Message):
-    rams = await edit_or_reply(message, "💫")
+    rams = await edit_or_reply(message, "🐣")
     await asyncio.sleep(2)
     cdm = message.command
     help_arg = ""
@@ -174,7 +173,7 @@ async def module_alive(client: Client, message: Message):
 
 @pyram("repo", ram)
 async def repo_alive(client: Client, message: Message):
-    rams = await edit_or_reply(message, "Sebentar....✨")
+    rams = await edit_or_reply(message, "Sebentar....🐣")
     cdm = message.command
     help_arg = ""
     bot_username = (await app.get_me()).username
