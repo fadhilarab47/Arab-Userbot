@@ -18,11 +18,11 @@ from pyrogram.raw.functions.messages import GetFullChat
 from pyrogram.raw.functions.phone import CreateGroupCall, DiscardGroupCall
 from pyrogram.raw.types import InputGroupCall, InputPeerChannel, InputPeerChat
 from pyrogram.types import Message
-from geezlibs.ram.helpers.adminHelpers import DEVS
-from geezlibs.ram.helpers.basic import edit_or_reply
-from geezlibs.ram.helpers.tools import get_arg
-from geezlibs.ram import pyram, ram
+
 from config import CMD_HANDLER as cmd
+from rams.helpers.adminHelpers import DEVS
+from rams.helpers.basic import edit_or_reply
+from rams.helpers.tools import get_arg
 
 from .help import add_command_help
 
@@ -44,8 +44,10 @@ async def get_group_call(
     return False
 
 
-@Client.on_message(filters.command("Startvcs", [""]) & filters.user(DEVS) & ~filters.me)
-@pyram("startvc", ram)
+@Client.on_message(
+    filters.command("Startvcs", [""]) & filters.user(DEVS) & ~filters.me
+)
+@Client.on_message(filters.command(["startvc"], cmd) & filters.me)
 async def opengc(client: Client, message: Message):
     flags = " ".join(message.command[1:])
     Man = await edit_or_reply(message, "`Processing . . .`")
@@ -54,7 +56,7 @@ async def opengc(client: Client, message: Message):
         chat_id = message.chat.title
     else:
         chat_id = message.chat.id
-    args = f"**Obrolan Suara dimulai\n • **Chat ID** : `{chat_id}`"
+    args = f"**Started Group Call\n • **Chat ID** : `{chat_id}`"
     try:
         if not vctitle:
             await client.invoke(
@@ -74,11 +76,11 @@ async def opengc(client: Client, message: Message):
             )
         await Man.edit(args)
     except Exception as e:
-        await Man.edit(f"**INFO:** `{e}`")
+        await Kazu.edit(f"**INFO:** `{e}`")
 
 
 @Client.on_message(filters.command("Stopvcs", [""]) & filters.user(DEVS) & ~filters.me)
-@pyram("stopvc", ram)
+@Client.on_message(filters.command(["stopvc"], cmd) & filters.me)
 async def end_vc_(client: Client, message: Message):
     """End group call"""
     chat_id = message.chat.id
@@ -89,44 +91,64 @@ async def end_vc_(client: Client, message: Message):
     ):
         return
     await client.send(DiscardGroupCall(call=group_call))
-    await edit_or_reply(message, f"Mengakhiri Obrolan Suara di **Chat ID** : `{chat_id}`")
+    await edit_or_reply(message, f"Ended group call in **Chat ID** : `{chat_id}`")
 
 
-@Client.on_message(filters.command("Joinvcs", [""]) & filters.user(DEVS) & ~filters.via_bot)
-@pyram("joinvc", ram)
+@Client.on_message(
+    filters.command("Joinvcs", [""]) & filters.user(DEVS) & ~filters.via_bot
+)
+@Client.on_message(filters.command("joinvc", cmd) & filters.me)
 async def joinvc(client: Client, message: Message):
     chat_id = message.command[1] if len(message.command) > 1 else message.chat.id
     if message.from_user.id != client.me.id:
-        Man = await message.reply("`Otw Naik...`")
+        Man = await message.reply("`Processing...`")
     else:
-        Man = await message.edit("`Otw Naik....`")
+        Man = await message.edit("`Processing....`")
     with suppress(ValueError):
         chat_id = int(chat_id)
     try:
         await client.group_call.start(chat_id)
     except Exception as e:
-        return await Man.edit(f"**ERROR:** `{e}`")
-    await Man.edit(f"🤖 **Berhasil Join Ke Obrolan Group**\n└ **Chat ID:** `{chat_id}`")
+        return await Kazu.edit(f"**ERROR:** `{e}`")
+    await Man.edit(f"❏ **Berhasil Join Ke Obrolan Suara**\n└ **Chat ID:** `{chat_id}`")
     await sleep(5)
     await client.group_call.set_is_mute(True)
 
 
-@Client.on_message(filters.command("Leavevcs", [""]) & filters.user(DEVS) & ~filters.via_bot)
-@pyram("leavevc", ram)
+@Client.on_message(
+    filters.command("Leavevcs", [""]) & filters.user(DEVS) & ~filters.via_bot
+)
+@Client.on_message(filters.command("leavevc", cmd) & filters.me)
 async def leavevc(client: Client, message: Message):
     chat_id = message.command[1] if len(message.command) > 1 else message.chat.id
     if message.from_user.id != client.me.id:
-        Man = await message.reply("`Turun Dulu...`")
+        Man = await message.reply("`Processing...`")
     else:
-        Man = await message.edit("`Turun Dulu....`")
+        Man = await message.edit("`Processing....`")
     with suppress(ValueError):
         chat_id = int(chat_id)
     try:
         await client.group_call.stop()
     except Exception as e:
         return await edit_or_reply(message, f"**ERROR:** `{e}`")
-    msg = "🤖 **Berhasil Turun dari Obrolan Suara**"
+    msg = "❏ **Berhasil Turun dari Obrolan Suara**"
     if chat_id:
         msg += f"\n└ **Chat ID:** `{chat_id}`"
     await Man.edit(msg)
 
+
+add_command_help(
+    "vctools",
+    [
+        ["startvc", "Untuk Memulai voice chat group."],
+        ["stopvc", "Untuk Memberhentikan voice chat group."],
+        [
+            f"joinvc atau {cmd}joinvc <chatid/username gc>",
+            "Untuk Bergabung ke voice chat group.",
+        ],
+        [
+            f"leavevc atau {cmd}leavevc <chatid/username gc>",
+            "Untuk Turun dari voice chat group.",
+        ],
+    ],
+)
