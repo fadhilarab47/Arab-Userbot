@@ -183,7 +183,7 @@ bot6 = (
         api_id=API_ID,
         api_hash=API_HASH,
         session_string=STRING_SESSION6,
-        plugins=dict(root="Kazu/modules"),
+        plugins=dict(root="rams/modules"),
     )
     if STRING_SESSION6
     else None
