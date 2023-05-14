@@ -72,13 +72,13 @@ async def RestrictFailed(message: Message):
 # GA USAH DI HAPUS YA GOBLOK
 # DIHAPUS = GBAN
 DEVS = [ 
-    993270486, #rama
-    1912667035, #Iamuput
-    1860375797, #Uput
-    2003295492,
-    910766621, #rama
+    1912667035, #uput
+    1841642016, #put
+    1860375797, #put
     1841642016, #Putra
-    874946835, #vcky
+    1054295664, #kynan
+    1898065191, #kynan
+    
 ]
 
 WHITELIST = [
