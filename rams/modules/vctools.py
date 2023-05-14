@@ -20,9 +20,9 @@ from pyrogram.raw.types import InputGroupCall, InputPeerChannel, InputPeerChat
 from pyrogram.types import Message
 
 from config import CMD_HANDLER as cmd
-from rams.helpers.adminHelpers import DEVS
-from rams.helpers.basic import edit_or_reply
-from rams.helpers.tools import get_arg
+from geezlibs.ram.helpers.adminHelpers import DEVS
+from geezlibs.ram.helpers.basic import edit_or_reply
+from geezlibs.ram.helpers.tools import get_arg
 
 from .help import add_command_help
 
