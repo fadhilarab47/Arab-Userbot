@@ -65,7 +65,7 @@ async def _callbacks(_, callback_query: CallbackQuery):
             callback_query.inline_message_id,
             "**MENU TELAH DITUTUP**",
             reply_markup=InlineKeyboardMarkup(
-                [[InlineKeyboardButton(text="ᴛᴇᴋᴀɴ ᴀᴋᴀ", callback_data="reopen")], [InlineKeyboardButton(text="ᴄʟᴏsᴇ", callback_data="tutup")]]
+                [[InlineKeyboardButton(text="ᴛᴇᴋᴀɴ ᴀᴊᴀ", callback_data="reopen")], [InlineKeyboardButton(text="ᴄʟᴏsᴇ", callback_data="tutup")]]
             ),
         )
         return
