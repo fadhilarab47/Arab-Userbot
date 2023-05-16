@@ -40,7 +40,7 @@ del _GCAST_BLACKLIST
 @pyram("gcast", ram)
 async def gcast_cmd(client: Client, message: Message):
     if message.reply_to_message or get_arg(message):
-        Man = await edit_or_reply(message, "`Limit Jangan salahin Gua tod, Proses menyebarkan pesan...`")
+        Man = await edit_or_reply(message, "`Limit Jangan salahin Gua Ya Anjing, Started global broadcast...`")
     else:
         return await message.edit_text("**Pesannya Mana ngentod**")
     done = 0
@@ -64,7 +64,7 @@ async def gcast_cmd(client: Client, message: Message):
                     error += 1
                     await asyncio.sleep(0.3)
     await Man.edit_text(
-        f"**Berhasil Mengirim Pesan Ke** `{done}` **Grup, Gagal Mengirim Pesan Ke** `{error}` **Grup**"
+        f"**Berhasil Mengirim Pesan Ke** `{done}` **Grup Ya Tod, Gagal Mengirim Pesan Ke** `{error}` **Grup Nih Tod, Sorry**"
     )
 
 
@@ -72,7 +72,7 @@ async def gcast_cmd(client: Client, message: Message):
 @pyram("gucast", ram)
 async def gucast_cmd(client: Client, message: Message):
     if message.reply_to_message or get_arg(message):
-        Man = await edit_or_reply(message, "`Limit Jangan Salahin gua tod, sedang menyebarkan pesan...`")
+        Man = await edit_or_reply(message, "`Limit Jangan Salahin Gua Ya Anjing, Started global broadcast...`")
     else:
         return await message.edit_text("**Pesannya Mana ngentod**")
     done = 0
@@ -96,7 +96,7 @@ async def gucast_cmd(client: Client, message: Message):
                     error += 1
                     await asyncio.sleep(0.3)
     await Man.edit_text(
-        f"**Berhasil Mengirim Pesan Ke** `{done}` **chat, Gagal Mengirim Pesan Ke** `{error}` **chat**"
+        f"**Berhasil Mengirim Pesan Ke** `{done}` **chat Nih tod, Gagal Mengirim Pesan Ke** `{error}` **chat Tod, Sorry**"
     )
 
 
