@@ -1,5 +1,5 @@
 try:
-    from geezlibs.ram.helpers.SQL import BASE, SESSION
+    from rams.split.berak.helpers.SQL import BASE, SESSION
 except ImportError:
     raise AttributeError
 
