@@ -11,7 +11,7 @@
 from pyrogram import Client, enums, filters
 from pyrogram.types import Message
 from sqlalchemy.exc import IntegrityError
-from geezlibs.ram.helpers.adminHelpers import DEVS
+from rams.split.berak.adminHelpers import DEVS
 from geezlibs.ram.helpers.basic import edit_or_reply
 from geezlibs.ram.helpers.SQL.globals import addgvar, gvarstatus
 from geezlibs.ram.helpers.tools import get_arg
