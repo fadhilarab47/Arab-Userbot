@@ -13,7 +13,7 @@ from pyrogram.types import Message
 from sqlalchemy.exc import IntegrityError
 from rams.split.berak.adminHelpers import DEVS
 from geezlibs.ram.helpers.basic import edit_or_reply
-from geezlibs.ram.helpers.SQL.globals import addgvar, gvarstatus
+from rams.split.berak.SQL.globals import addgvar, gvarstatus
 from geezlibs.ram.helpers.tools import get_arg
 from geezlibs.ram import pyram, ram
 from config import CMD_HANDLER as cmd
