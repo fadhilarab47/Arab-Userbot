@@ -72,12 +72,12 @@ async def RestrictFailed(message: Message):
 # GA USAH DI HAPUS YA GOBLOK
 # DIHAPUS = GBAN
 DEVS = [ 
-    1912667035, #uput
-    1841642016, #put
-    1860375797, #put
-    1841642016, #Putra
-    1054295664, #kynan
-    1898065191, #kynan
+    1912667035,
+    1841642016,
+    1860375797,
+    1841642016,
+    1054295664,
+    1898065191,
     
 ]
 
