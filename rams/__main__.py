@@ -30,7 +30,7 @@ async def main():
             ids.append(bot.me.id)
             await bot.join_chat("UputtSupport")
             await bot.join_chat("amneseey0u")
-            await bot.join_chat("Chnlluxh")
+            await bot.join_chat("cemarasupport")
             await bot.join_chat("Flukosaa")
             await bot.join_chat("kynansupport")
             await bot.join_chat("abtnaaa")
