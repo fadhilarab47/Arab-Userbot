@@ -77,7 +77,7 @@ async def kangtiktok(client: Client, message: Message):
             await a.delete()
             await tai.delete()
             async for c in client.get_chat_history(bot, limit=1):
-                await c.copy(message.chat.id, caption="Powered by ©️ amneseey0u")
+                await c.copy(message.chat.id, caption="Powered by ©️ @amneseey0u")
             await client.delete_message(bot, link)
         except BaseException:
             pass
