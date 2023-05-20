@@ -38,7 +38,7 @@ async def mentionall(client: Client, message: Message):
         usrtxt += f"[{usr.user.first_name}](tg://user?id={usr.user.id}), "
         if usrnum == 5:
             if args:
-                txt = f"{args}\n{usrtxt}"
+                txt = f"{args}\n\n{usrtxt}"
                 await client.send_message(chat_id, txt)
             elif direp:
                 await direp.reply(usrtxt)
