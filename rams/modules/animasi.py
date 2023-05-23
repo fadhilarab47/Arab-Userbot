@@ -907,6 +907,31 @@ async def hearts(client: Client, message: Message):
     await message.edit("Ayuukk Picies Yang 🤤")
 
 
+@pyram(["lipkol", "sleepcall"], ram)
+async def hearts(client: Client, message: Message):
+    await phase1(message)
+    await asyncio.sleep(SLEEP * 3)
+    await message.edit("Ayaaang 🥺")
+    await asyncio.sleep(0.5)
+    await message.edit("Kangeeen 👉👈")
+    await asyncio.sleep(0.5)
+    await message.edit("Pingiinn Slipkool Yaaang 🥺👉👈")
+    await asyncio.sleep(3)   
+    
+
+@pyram(["nakal", "bandel"], ram)
+async def hearts(client: Client, message: Message):
+    await phase1(message)
+    await asyncio.sleep(SLEEP * 3)
+    await message.edit("Ayaaang Ih 🥺")
+    await asyncio.sleep(0.5)
+    await message.edit("Nakal Banget Dah Ayang 🥺")
+    await asyncio.sleep(0.5)
+    await message.edit("Aku Gak Like Ayang 😠")
+    await asyncio.sleep(3)
+    await message.edit("Pokoknya Aku Gak Like Ih 😠")    
+    
+    
 @pyram("y", ram)
 async def ysaja(client: Client, message: Message):
     await edit_or_reply(
