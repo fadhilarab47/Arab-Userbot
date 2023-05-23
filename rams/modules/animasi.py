@@ -895,6 +895,16 @@ async def awikwok(client: Client, message: Message):
         "─▄▄▄▀──▀▄───▄▄▄▀──▀▄\n"
         "─▀───────▀▀─▀───────▀▀\n`Awkwokwokwok..`",
     )
+    
+@pyram(["ange", "sange"], ram)
+async def hearts(client: Client, message: Message):
+    await phase1(message)
+    await asyncio.sleep(SLEEP * 3)
+    await message.edit("Ayanggg 😖")
+    await asyncio.sleep(0.5)
+    await message.edit("Aku Ange 😫")
+    await asyncio.sleep(0.5)
+    await message.edit("Ayuukk Picies Yang 🤤")
 
 
 @pyram("y", ram)
