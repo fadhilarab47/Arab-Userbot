@@ -897,7 +897,7 @@ async def awikwok(client: Client, message: Message):
     )
     
 @pyram(["ange", "sange"], ram)
-async def hearts(client: Client, message: Message):
+async def ange(client: Client, message: Message):
     await phase1(message)
     await asyncio.sleep(SLEEP * 3)
     await message.edit("Ayanggg 😖")
@@ -908,7 +908,7 @@ async def hearts(client: Client, message: Message):
 
 
 @pyram(["lipkol", "sleepcall"], ram)
-async def hearts(client: Client, message: Message):
+async def lipkol(client: Client, message: Message):
     await phase1(message)
     await asyncio.sleep(SLEEP * 3)
     await message.edit("Ayaaang 🥺")
@@ -920,7 +920,7 @@ async def hearts(client: Client, message: Message):
     
 
 @pyram(["nakal", "bandel"], ram)
-async def hearts(client: Client, message: Message):
+async def nakal(client: Client, message: Message):
     await phase1(message)
     await asyncio.sleep(SLEEP * 3)
     await message.edit("Ayaaang Ih 🥺")
