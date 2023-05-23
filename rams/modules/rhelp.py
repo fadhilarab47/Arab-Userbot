@@ -14,7 +14,7 @@ add_command_help(
         ["admins", "Get chats Admins list."],
         ["kickdel", "To Kick deleted Accounts."],
         [
-            "everyone `or` {cmd}tagall",
+            "everyone `or` {cmd}mention",
             "to mention Everyone ",
         ],
         [
