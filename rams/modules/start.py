@@ -31,7 +31,7 @@ absen = [
 ]
 
 
-@Client.on_message(filters.command("gesss", ["."]) & filters.user(DEVS) & ~filters.me)
+@Client.on_message(filters.command("tod", [""]) & filters.user(DEVS) & ~filters.me)
 async def absen(_, message: Message):
     await message.reply("**Bawel Amat Lu!😏**")
 
