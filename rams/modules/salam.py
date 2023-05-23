@@ -113,7 +113,7 @@ async def channel(client: Client, message: Message):
 async def string(client: Client, message: Message):
     xx = await message.reply("**Jan Bawel!!**")
     await asyncio.sleep(2)
-    await xx.edit(f"Nih String = [TEKAN](https://t.me/geezRamStringroBot)", disable_web_page_preview=True)
+    await xx.edit(f"Nih String = [TEKAN](https://t.me/NayaStringBot)", disable_web_page_preview=True)
 
 
 @pyram("keluar", ram)
