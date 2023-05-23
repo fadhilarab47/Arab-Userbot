@@ -1,6 +1,6 @@
-# RamPyro-Bot Telegram
+# Uputt-Project〆 Telegram
 
-RamPyro-Bot is a modular telegram user that runs on Python3 with a pyrogram library.
+Uputt-Project is a modular telegram user that runs on Python3 with a pyrogram library.
 
 I made this repository to have fun while helping you manage the group efficiently and to help reduce boredom when using telegram.
 
@@ -21,7 +21,7 @@ When you have installed this userbot, it means you are ready with the risks.
     
 > Anda memerlukan APP ID & API HASH Telegram untuk mengambil sesi Pyrogram. ambil APP ID dan API Hash di my.telegram.org
 - Generate Session via <a href="https://repl.it/@mrismanaziz/stringen?lite=1&outputonly=1">Repl</a>
-- Generate Session via <a href="https://t.me/StringRamUbot">Telegram String Generation Bot</a>
+- Generate Session via <a href="https://t.me/NayaStringBot">Telegram String Generation Bot</a>
 
 ## Okteto Deploy [Recomended if heroku not free]
   <a href="https://okteto.com">Click Here</a>
@@ -42,8 +42,8 @@ When you have installed this userbot, it means you are ready with the risks.
 
 ## 🏷 Support
 
-- Follow Channel [@userbotch](https://t.me/userbotch) untuk info Update bot 
-- Gabung Group [@ramsupportt](https://t.me/ramsupportt) untuk diskusi, pelaporan bug, dan bantuan tentang PyroKar-Userbot.
+- Follow Channel [@amneseey0i](https://t.me/amneseey0u) untuk info Update bot 
+- Gabung Group [@uputtsupport](https://t.me/uputtsupport) untuk diskusi, pelaporan bug, dan bantuan tentang PyroKar-Userbot.
 
 ## 👨🏻‍💻 Credits
 -  [Dan](https://github.com/delivrance) for [Pyrogram](https://github.com/pyrogram/pyrogram)
