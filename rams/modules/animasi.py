@@ -896,7 +896,7 @@ async def awikwok(client: Client, message: Message):
         "─▀───────▀▀─▀───────▀▀\n`Awkwokwokwok..`",
     )
     
-@@pyram(["ange", "sange"], ram)
+@pyram(["ange", "sange"], ram)
 async def kocok(client: Client, message: Message):
     e = await edit_or_reply(message, "Ayanggg 😖")
     await e.edit("Ayanggg 😖")
