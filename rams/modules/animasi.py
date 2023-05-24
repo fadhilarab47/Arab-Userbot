@@ -900,8 +900,6 @@ async def awikwok(client: Client, message: Message):
 async def kocok(client: Client, message: Message):
     e = await edit_or_reply(message, "Ayanggg 😖")
     await asyncio.sleep(2)
-    await e.edit("Ayanggg 😖")
-    await asyncio.sleep(2)
     await e.edit("Aku Ange 😫")
     await asyncio.sleep(2)
     await e.edit("Ayuukk Picies Yang 🤤")
