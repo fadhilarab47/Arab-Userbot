@@ -896,40 +896,27 @@ async def awikwok(client: Client, message: Message):
         "─▀───────▀▀─▀───────▀▀\n`Awkwokwokwok..`",
     )
     
-@pyram(["ange", "sange"], ram)
-async def ange(client: Client, message: Message):
-    await phase1(message)
-    await asyncio.sleep(SLEEP * 3)
-    await message.edit("Ayanggg 😖")
-    await asyncio.sleep(0.5)
-    await message.edit("Aku Ange 😫")
-    await asyncio.sleep(0.5)
-    await message.edit("Ayuukk Picies Yang 🤤")
+@@pyram(["ange", "sange"], ram)
+async def kocok(client: Client, message: Message):
+    e = await edit_or_reply(message, "Ayanggg 😖")
+    await e.edit("Ayanggg 😖")
+    await e.edit("Aku Ange 😫")
+    await e.edit("Ayuukk Picies Yang 🤤")
 
 
 @pyram(["lipkol", "sleepcall"], ram)
 async def lipkol(client: Client, message: Message):
-    await phase1(message)
-    await asyncio.sleep(SLEEP * 3)
-    await message.edit("Ayaaang 🥺")
-    await asyncio.sleep(0.5)
-    await message.edit("Kangeeen 👉👈")
-    await asyncio.sleep(0.5)
-    await message.edit("Pingiinn Slipkool Yaaang 🥺👉👈")
-    await asyncio.sleep(3)   
+    e = await edit_or_reply(message, "Ayanggg 😖")
+    await x.edit("Kangeeen 👉👈")
+    await x.edit("Pingiinn Slipkool Yaaang 🥺👉👈")
     
 
 @pyram(["nakal", "bandel"], ram)
 async def nakal(client: Client, message: Message):
-    await phase1(message)
-    await asyncio.sleep(SLEEP * 3)
-    await message.edit("Ayaaang Ih 🥺")
-    await asyncio.sleep(0.5)
-    await message.edit("Nakal Banget Dah Ayang 🥺")
-    await asyncio.sleep(0.5)
-    await message.edit("Aku Gak Like Ayang 😠")
-    await asyncio.sleep(3)
-    await message.edit("Pokoknya Aku Gak Like Ih 😠")    
+    e = await edit_or_reply(message, "Ayanggg ih🥺")
+    await e.edit("Nakal Banget Dah Ayang 🥺")
+    await e.edit("Aku Gak Like Ayang 😠")
+    await e.edit("Pokoknya Aku Gak Like Ih 😠")    
     
     
 @pyram("y", ram)
