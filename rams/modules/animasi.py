@@ -899,23 +899,31 @@ async def awikwok(client: Client, message: Message):
 @pyram(["ange", "sange"], ram)
 async def kocok(client: Client, message: Message):
     e = await edit_or_reply(message, "Ayanggg 😖")
+    await asyncio.sleep(2)
     await e.edit("Ayanggg 😖")
+    await asyncio.sleep(2)
     await e.edit("Aku Ange 😫")
+    await asyncio.sleep(2)
     await e.edit("Ayuukk Picies Yang 🤤")
 
 
 @pyram(["lipkol", "sleepcall"], ram)
 async def lipkol(client: Client, message: Message):
     e = await edit_or_reply(message, "Ayanggg 😖")
-    await x.edit("Kangeeen 👉👈")
-    await x.edit("Pingiinn Slipkool Yaaang 🥺👉👈")
+    await asyncio.sleep(2)
+    await e.edit("Kangeeen 👉👈")
+    await asyncio.sleep(2)
+    await e.edit("Pingiinn Slipkool Yaaang 🥺👉👈")
     
 
 @pyram(["nakal", "bandel"], ram)
 async def nakal(client: Client, message: Message):
     e = await edit_or_reply(message, "Ayanggg ih🥺")
+    await asyncio.sleep(2)
     await e.edit("Nakal Banget Dah Ayang 🥺")
+    await asyncio.sleep(2)
     await e.edit("Aku Gak Like Ayang 😠")
+    await asyncio.sleep(2)
     await e.edit("Pokoknya Aku Gak Like Ih 😠")    
     
     
