@@ -173,7 +173,7 @@ async def upstream(client: Client, message: Message):
             repo.__del__()
             return
         await status.edit(
-            "`[HEROKU]: Update Deploy RamPyro-Bot Sedang Dalam Proses...`"
+            "`[HEROKU]: Update Deploy Uputt-Project Sedang Dalam Proses...`"
         )
         ups_rem.fetch(ac_br)
         repo.git.reset("--hard", "FETCH_HEAD")
@@ -190,7 +190,7 @@ async def upstream(client: Client, message: Message):
         except GitCommandError:
             pass
         await status.edit(
-            "`RamPyro-Bot Berhasil Diupdate! Userbot bisa di Gunakan Lagi.`"
+            "`Uputt-Project Berhasil Diupdate! Userbot bisa di Gunakan Lagi.`"
         )
     else:
         try:
@@ -199,7 +199,7 @@ async def upstream(client: Client, message: Message):
             repo.git.reset("--hard", "FETCH_HEAD")
         await updateme_requirements()
         await status.edit(
-            "`RamPyro-Bot Berhasil Diupdate! Userbot bisa di Gunakan Lagi.`",
+            "`Uputt-Project Berhasil Diupdate! Userbot bisa di Gunakan Lagi.`",
         )
         args = [sys.executable, "-m", "geezlibs.ram"]
         execle(sys.executable, *args, environ)
