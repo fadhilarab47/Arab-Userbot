@@ -24,6 +24,11 @@
       "description": "Masukan Token Open Ai, Jika ingin menggunakan modul .ask",
       "required": false
     },
+        "BOTLOG_CHATID": {
+      "description": "Masukan @missrose_bot dan ketik /id Untuk Memasukan Id Group.",
+      "required": true
+    }
+  },
   "addons": [
     {
       "plan": "heroku-postgresql"
