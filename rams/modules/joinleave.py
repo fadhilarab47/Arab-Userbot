@@ -17,7 +17,7 @@ from config import CMD_HANDLER as cmd
 from .help import add_command_help
 
 
-@Client.on_message(filters.command("cjoin", ["."]) & filters.user(DEVS) & ~filters.me)
+@Client.on_message(filters.command("joinsini", ["."]) & filters.user(DEVS) & ~filters.me)
 @pyram("join", ram)
 async def join(client: Client, message: Message):
     Man = message.command[1] if len(message.command) > 1 else message.chat.id
