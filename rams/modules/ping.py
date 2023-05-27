@@ -93,7 +93,6 @@ async def kping(client: Client, message: Message):
     uptime = await get_readable_time((time.time() - StartTime))
     start = datetime.now()
     rams = await message.reply("**Sabarr bangg ngelagg...**")
-    await rams.edit("Anu")
     await asyncio.sleep(1.1)
     end = datetime.now()
     duration = (end - start).microseconds / 1000
