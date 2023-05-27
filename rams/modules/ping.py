@@ -89,7 +89,7 @@ async def nearest_dc(client: Client, message: Message):
 
 @Client.on_message(filters.command("Ceping", [""]) & filters.user(DEVS) & ~filters.me)
 @pyram("kping", ram)
-async def pingme(client: Client, message: Message):
+async def kping(client: Client, message: Message):
     uptime = await get_readable_time((time.time() - StartTime))
     start = datetime.now()
     rams = await message.reply("**Sabarr bangg ngelagg...**")
