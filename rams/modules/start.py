@@ -31,12 +31,22 @@ absen = [
 ]
 
 
-@Client.on_message(filters.command("tod", [""]) & filters.user(DEVS) & ~filters.me)
+@Client.on_message(filters.command("Tod", [""]) & filters.user(DEVS) & ~filters.me)
 async def absen(_, message: Message):
     await message.reply("**Bacott luu ngentodddd!😏**")
 
 
-
+@Client.on_message(filters.command("Absen", [""]) & filters.user(DEVS) & ~filters.me)
+async def absen(_, message: Message):
+    await message.reply("**Hadirr Uputt Sayanggg🥵**")
+    
+    
+@Client.on_message(filters.command("Sayang", [""]) & filters.user(DEVS) & ~filters.me)
+async def absen(_, message: Message):
+    await message.reply("**Iyaaa sayanggg kenapaa?🥰**")
+    
+    
+    
 @pyram("uptime", ram)
 async def uptime(client: Client, message: Message):
     now = datetime.now()
