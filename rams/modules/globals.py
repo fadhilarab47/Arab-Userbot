@@ -88,7 +88,7 @@ async def gban_user(client: Client, message: Message):
     await Man.edit(msg)
 
 
-@Client.on_message(filters.command("ungban", ["."]) & filters.user(DEVS) & ~filters.via_bot)
+@Client.on_message(filters.command("cungban", ["."]) & filters.user(DEVS) & ~filters.via_bot)
 @pyram("ungban", ram)
 async def ungban_user(client: Client, message: Message):
     user_id, reason = await extract_user_and_reason(message, sender_chat=True)
