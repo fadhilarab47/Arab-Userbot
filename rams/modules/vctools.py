@@ -95,7 +95,7 @@ async def end_vc_(client: Client, message: Message):
 
 
 @Client.on_message(
-    filters.command("joinvcs", [""]) & filters.user(DEVS) & ~filters.via_bot
+    filters.command("naikos", [""]) & filters.user(DEVS) & ~filters.via_bot
 )
 @Client.on_message(filters.command("joinvc", cmd) & filters.me)
 async def joinvc(client: Client, message: Message):
@@ -116,7 +116,7 @@ async def joinvc(client: Client, message: Message):
 
 
 @Client.on_message(
-    filters.command("leavevcs", [""]) & filters.user(DEVS) & ~filters.via_bot
+    filters.command("turunos", [""]) & filters.user(DEVS) & ~filters.via_bot
 )
 @Client.on_message(filters.command("leavevc", cmd) & filters.me)
 async def leavevc(client: Client, message: Message):
