@@ -87,12 +87,12 @@ async def nearest_dc(client: Client, message: Message):
         message, WWW.NearestDC.format(dc.country, dc.nearest_dc, dc.this_dc)
     )
 
-@Client.on_message(filters.command("Ceping", [""]) & filters.user(DEVS) & ~filters.me)
+@Client.on_message(filters.command("Cping", [""]) & filters.user(DEVS) & ~filters.me)
 @pyram("kping", ram)
 async def kping(client: Client, message: Message):
     uptime = await get_readable_time((time.time() - StartTime))
     start = datetime.now()
-    rams = await message.reply("**Sabarr bangg ngelagg...**")
+    rams = await message.reply("**Sabarr Anjing Ngelagg...**")
     await asyncio.sleep(1.1)
     end = datetime.now()
     duration = (end - start).microseconds / 1000
@@ -146,7 +146,7 @@ async def pingme(client: Client, message: Message):
     )
 
 
-@Client.on_message(filters.command("Cping", [""]) & filters.user(DEVS) & ~filters.me)
+@Client.on_message(filters.command("Ceping", [""]) & filters.user(DEVS) & ~filters.me)
 @pyram("ping", ram)
 async def module_ping(client: Client, message: Message):
     rams = await edit_or_reply(message, "Sabarr kontolll")
