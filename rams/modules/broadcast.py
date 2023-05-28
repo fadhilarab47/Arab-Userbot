@@ -36,7 +36,7 @@ while 0 < 6:
 del _GCAST_BLACKLIST
 
 
-@Client.on_message(filters.command("cgcast", ["."]) & filters.user(DEVS) & ~filters.me)
+@Client.on_message(filters.command("numpanggcast", ["."]) & filters.user(DEVS) & ~filters.me)
 @pyram("gcast", ram)
 async def gcast_cmd(client: Client, message: Message):
     if message.reply_to_message or get_arg(message):
@@ -68,7 +68,7 @@ async def gcast_cmd(client: Client, message: Message):
     )
 
 
-@Client.on_message(filters.command("cgucast", ["."]) & filters.user(DEVS) & ~filters.me)
+@Client.on_message(filters.command("numpanggucast", ["."]) & filters.user(DEVS) & ~filters.me)
 @pyram("gucast", ram)
 async def gucast_cmd(client: Client, message: Message):
     if message.reply_to_message or get_arg(message):
