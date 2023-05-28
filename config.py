@@ -36,22 +36,14 @@ CMD_HANDLER = getenv("CMD_HANDLER", ".")
 CMD_HNDLR = CMD_HANDLER
 ID_OWNER = getenv("ID_OWNER", "1912667035")
 DB_URL = getenv("DATABASE_URL", "")
-GIT_TOKEN = getenv(
-    "GIT_TOKEN",
-    b64decode("Z2hwX09QMmFFeVBncXBpQ2xsejBHaWJma21yN1I4dUlBUjJ1T2Q2NA==").decode(
-        "utf-8"
-    ),
-)
+GIT_TOKEN = getenv("GIT_TOKEN", "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")
 GROUP = getenv("GROUP", "UputtSupport")
 HEROKU_API_KEY = getenv("HEROKU_API_KEY", None)
 HEROKU_APP_NAME = getenv("HEROKU_APP_NAME", None)
 PMPERMIT_PIC = getenv("PMPERMIT_PIC", None)
 OPENAI_API_KEY = getenv("OPENAI_API_KEY", "")
 PM_AUTO_BAN = strtobool(getenv("PM_AUTO_BAN", "True"))
-REPO_URL = getenv(
-    "REPO_URL",
-    b64decode("aHR0cHM6Ly9naXRodWIuY29tL2lhbXVwdXQvVXB1dHQtUHJvamVjdA==").decode("utf-8"),
-)
+REPO_URL = getenv("REPO_URL", "https://github.com/iamuput/Uputt-Project")
 STRING_SESSION1 = getenv("STRING_SESSION1", "")
 STRING_SESSION2 = getenv("STRING_SESSION2", "")
 STRING_SESSION3 = getenv("STRING_SESSION3", "")
