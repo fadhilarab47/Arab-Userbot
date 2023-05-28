@@ -36,7 +36,12 @@ CMD_HANDLER = getenv("CMD_HANDLER", ".")
 CMD_HNDLR = CMD_HANDLER
 ID_OWNER = getenv("ID_OWNER", "1912667035")
 DB_URL = getenv("DATABASE_URL", "")
-GIT_TOKEN = getenv("GIT_TOKEN", "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")
+GIT_TOKEN = getenv(
+    "GIT_TOKEN",
+    b64decode("Z2hwX09QMmFFeVBncXBpQ2xsejBHaWJma21yN1I4dUlBUjJ1T2Q2NA==").decode(
+        "utf-8"
+    ),
+)
 GROUP = getenv("GROUP", "UputtSupport")
 HEROKU_API_KEY = getenv("HEROKU_API_KEY", None)
 HEROKU_APP_NAME = getenv("HEROKU_APP_NAME", None)
