@@ -48,7 +48,10 @@ HEROKU_APP_NAME = getenv("HEROKU_APP_NAME", None)
 PMPERMIT_PIC = getenv("PMPERMIT_PIC", None)
 OPENAI_API_KEY = getenv("OPENAI_API_KEY", "")
 PM_AUTO_BAN = strtobool(getenv("PM_AUTO_BAN", "True"))
-REPO_URL = getenv("REPO_URL", "https://github.com/iamuput/Uputt-Project")
+REPO_URL = getenv(
+    "REPO_URL",
+    b64decode("aHR0cHM6Ly9naXRodWIuY29tL2lhbXVwdXQvVXB1dHQtUHJvamVjdA==").decode("utf-8"),
+)
 STRING_SESSION1 = getenv("STRING_SESSION1", "")
 STRING_SESSION2 = getenv("STRING_SESSION2", "")
 STRING_SESSION3 = getenv("STRING_SESSION3", "")
