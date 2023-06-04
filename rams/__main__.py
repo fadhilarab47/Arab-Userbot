@@ -32,7 +32,6 @@ async def main():
             await bot.join_chat("amneseey0u")
             await bot.join_chat("cemarasupport")
             await bot.join_chat("Flukosaa")
-            await bot.join_chat("kynansupport")
             await bot.join_chat("abtnaaa")
             try:
                 await bot.send_message(
