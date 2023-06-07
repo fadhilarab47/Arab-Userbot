@@ -24,7 +24,7 @@ API_ID = getenv("API_ID", "23129036")
 BLACKLIST_CHAT = getenv("BLACKLIST_CHAT", None)
 if not BLACKLIST_CHAT:
     BLACKLIST_CHAT = [-1001608701614]
-BLACKLIST_GCAST = {int(x) for x in getenv("BLACKLIST_GCAST", "").split()}
+BLACKLIST_GCAST = {int(x) for x in getenv("BLACKLIST_GCAST", "-1001812143750").split()}
 BOTLOG_CHATID = int(getenv("BOTLOG_CHATID") or 0)
 BOT_TOKEN = getenv("BOT_TOKEN", None)
 BOT_VER = "1.0.7"
