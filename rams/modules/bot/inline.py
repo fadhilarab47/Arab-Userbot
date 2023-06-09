@@ -79,7 +79,7 @@ async def alive_function(message: Message, answers):
                 msg, parse_mode=ParseMode.HTML, disable_web_page_preview=True
             ),
             reply_markup=InlineKeyboardMarkup(
-                [[InlineKeyboardButton("──「 ʜᴇʟᴘ 」──", url=f"tg://openmessage?user_id={message.from_user.id}")]]
+                [[InlineKeyboardButton("「 ᴅᴀᴊᴊᴀʟ 」", url=f"tg://openmessage?user_id={message.from_user.id}")]]
             ),
         )
     )
