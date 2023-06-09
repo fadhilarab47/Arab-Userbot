@@ -72,7 +72,7 @@ async def alive_function(message: Message, answers):
     )
     answers.append(
         InlineQueryResultArticle(
-            title="uputt",
+            title="Alive",
             description="Check Bot's Stats",
             thumb_url="https://telegra.ph/file/9b992f562b086e221acdd.jpg",
             input_message_content=InputTextMessageContent(
@@ -97,7 +97,7 @@ async def ping_function(message: Message, answers):
     )
     answers.append(
         InlineQueryResultArticle(
-            title="Alive",
+            title="uputt",
             description="Check Bot's Stats",
             thumb_url="https://telegra.ph/file/6d909b4a1b7b0385c1dfe.jpg",
             input_message_content=InputTextMessageContent(
@@ -160,13 +160,13 @@ async def inline_query_handler(client: Client, query):
         answers = []
         if text.strip() == "":
             return
-        elif text.split()[0] == "uputt":
+        elif text.split()[0] == "alive":
             answerss = await alive_function(query, answers)
             await client.answer_inline_query(query.id, results=answerss, cache_time=10)
         elif string_given.startswith("helper"):
             answers = await help_function(answers)
             await client.answer_inline_query(query.id, results=answers, cache_time=0)
-        elif string_given.startswith("alive"):
+        elif string_given.startswith("uputt"):
             answers = await ping_function(query, answers)
             await client.answer_inline_query(query.id, results=answers, cache_time=0)
         elif string_given.startswith("channel"):
