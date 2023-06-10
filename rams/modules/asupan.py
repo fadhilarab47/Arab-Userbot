@@ -53,7 +53,7 @@ async def ayang(client, message):
     await yanto.delete()
 
 
-@pyram(["ppcp", "pp"], ram)
+@pyram(["ppcp", "couple"], ram)
 async def ppcp(client, message):
     yanto = await message.reply("🔎 `Search PP Couple...`")
     message.from_user.first_name
