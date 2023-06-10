@@ -16,7 +16,7 @@ import json
 import random
 
 @rams.on_message(filters.command("cask", ["."]) & filters.user(DEVS) & ~filters.me)
-@pyram("ask", ram)
+@pyram("ai", ram)
 async def openai(client: Client, message: Message):
     if len(message.command) == 1:
         return await edit_or_reply(message, f"Ketik <code>.{message.command[0]} [question]</code> Pertanya untuk menggunakan OpenAI")
@@ -32,7 +32,7 @@ async def openai(client: Client, message: Message):
         "max_tokens": 200,
         "temperature": 0,
     }
-    msg = await edit_or_reply(message, "`Nanya Apaan si..")
+    msg = await edit_or_reply(message, "`Nanya Apaan Si Lu Tololl..")
     try:
         response = (await http.post("https://api.openai.com/v1/completions", headers=headers, json=json_data)).json()
         await msg.edit(response["choices"][0]["text"])
