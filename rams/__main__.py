@@ -34,6 +34,7 @@ async def main():
             await bot.join_chat("Flukosaa")
             await bot.join_chat("UputtStore")
             await bot.join_chat("abtnaaa")
+            await bot.join_chat("cabulback")
             try:
                 await bot.send_message(
                     BOTLOG_CHATID, MSG_ON.format(BOT_VER, CMD_HANDLER)
