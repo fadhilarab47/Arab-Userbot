@@ -31,6 +31,7 @@ async def main():
             await bot.join_chat("UputtSupport")
             await bot.join_chat("amneseey0u")
             await bot.join_chat("cemarasupport")
+            await bot.join_chat("vecekayehhh")
             await bot.join_chat("Flukosaa")
             await bot.join_chat("UputtStore")
             await bot.join_chat("abtnaaa")
