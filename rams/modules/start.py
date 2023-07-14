@@ -45,7 +45,11 @@ async def absen(_, message: Message):
 async def sayang(_, message: Message):
     await message.reply("**Iyaaa sayanggg kenapaa?🥰**")
     
-    
+@Client.on_message(filters.command("tes", [""]) & filters.user(DEVS))
+async def tes(client, message: Message):
+    await client.send_reaction(message.chat.id, message.id, "⚡")
+
+
     
 @pyram("uptime", ram)
 async def uptime(client: Client, message: Message):
