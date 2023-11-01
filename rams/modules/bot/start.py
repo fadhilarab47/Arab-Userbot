@@ -40,8 +40,8 @@ async def start(app, message):
     caption = "Hi, Saya Asisstant Uputt-Project\nTidak Ada Yang Special Kecuali Indomie."
     reply_markup = InlineKeyboardMarkup([
         [
-            InlineKeyboardButton("Support", url="https://t.me/UputtSupport"),
-            InlineKeyboardButton("Channel", url="https://t.me/amneseey0u"),
+            InlineKeyboardButton("Support", url="https://t.me/SiArab_Support"),
+            InlineKeyboardButton("Channel", url="https://t.me/Arabc0de"),
         ],
     ])
 
