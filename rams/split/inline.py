@@ -52,7 +52,7 @@ def cb_wrapper(func):
         users = list_users
         if cb.from_user.id not in users:
             await cb.answer(
-                "Anda Harus Menjadi Pengguna Uputt-Project Terlebih Dahulu🤪!!!",
+                "Anda Harus Menjadi Pengguna Arab-Pyro Terlebih Dahulu🤪!!!",
                 cache_time=0,
                 show_alert=True,
             )
@@ -82,7 +82,7 @@ def inline_wrapper(func):
                 results=[
                     (
                         InlineQueryResultArticle(
-                            title="Lu siapasi bangsat,bikin sndiri lah di @UputtSupport",
+                            title="Lu siapasi bangsat,bikin sndiri lah di @SiArab_Support",
                             input_message_content=InputTextMessageContent(
                                 "Maaf anda tidak ada akses untuk menggunakan bot"
                             ),
