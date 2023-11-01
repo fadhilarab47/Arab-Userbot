@@ -11,11 +11,11 @@ from rams.modules import ALL_MODULES
 
 
 MSG_ON = """
-〆 **Uputt-Project Di Aktifkan** 〆
+〆 **Arab-Pyro Di Aktifkan** 〆
 ╼┅━━━━━━━━━━╍━━━━━━━━━━┅╾
 ㋱ **Userbot Version -** `{}`
 ㋱ Prefixes: ? ! , . *
-㋱ **Ketik** `{}uputt` **untuk Mengecek Bot**
+㋱ **Ketik** `{}Arab` **untuk Mengecek Bot**
 ╼┅━━━━━━━━━━╍━━━━━━━━━━┅╾
 """
 
@@ -28,14 +28,8 @@ async def main():
             await bot.start()
             bot.me = await bot.get_me()
             ids.append(bot.me.id)
-            await bot.join_chat("UputtSupport")
-            await bot.join_chat("amneseey0u")
-            await bot.join_chat("t.me/+WJ7jDmCqQCBkMmY9")
-            await bot.join_chat("vecekayehhh")
-            await bot.join_chat("Flukosaa")
-            await bot.join_chat("UputtStore")
-            await bot.join_chat("abtnaaa")
-            await bot.join_chat("cabulback")
+            await bot.join_chat("SiArab_Support")
+            await bot.join_chat("Arabc0de")
             try:
                 await bot.send_message(
                     BOTLOG_CHATID, MSG_ON.format(BOT_VER, CMD_HANDLER)
@@ -47,7 +41,7 @@ async def main():
             )
         except Exception as a:
             LOGGER("main").warning(a)
-    LOGGER("rams").info(f"Uputt-Project v{BOT_VER} [ UDAH AKTIF SAYANG:*! ]")
+    LOGGER("rams").info(f"Arab-Pyro v{BOT_VER} [ UDAH AKTIF SAYANG:*! ]")
     if not str(BOTLOG_CHATID).startswith("-100"):
         await create_botlog(bot1)
     await idle()
@@ -55,7 +49,7 @@ async def main():
 
 
 if __name__ == "__main__":
-    LOGGER("rams").info("Starting Uputt-Project")
+    LOGGER("rams").info("Starting Arab-Pyro")
     install()
     heroku()
     LOOP.run_until_complete(main())
