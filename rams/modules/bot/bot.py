@@ -37,15 +37,15 @@ async def _callbacks(_, callback_query: CallbackQuery):
     elif query == "close":
         if callback_query.from_user.id not in users:
            return
-        await app.edit_inline_text(callback_query.inline_message_id, f"Uputt-Project \n"
-            "ㅤ❏  Status : Uputt-Project Aktif!!! \n"
+        await app.edit_inline_text(callback_query.inline_message_id, f"Arab-Pyro \n"
+            "ㅤ❏  Status : Arab-Pyro Aktif!!! \n"
             f"ㅤㅤ├ Modules: </b> <code>{len(modules)} </code> \n"
             f"ㅤㅤ├ Bot Version: {BOT_VER} \n"
             f"ㅤㅤ├ Branch: {branch} \n"
             f"ㅤㅤ├ Pyrogram Version: </b> <code>{pyrover}</code>\n"
             f"ㅤㅤ├ Python Version: </b> <code>{pyver.split()[0]}</code>",
             reply_markup=InlineKeyboardMarkup(
-                [[InlineKeyboardButton(text="sᴜᴘᴘᴏʀᴛ", url="t.me/uputtSupport"), InlineKeyboardButton(text="ᴄʜᴀɴɴᴇʟ", url="https://t.me/amneseey0u")], [InlineKeyboardButton(text="ᴛᴇᴋᴀɴ ᴀᴊᴀ", callback_data="helper")]]
+                [[InlineKeyboardButton(text="sᴜᴘᴘᴏʀᴛ", url="t.me/SiArab_Support"), InlineKeyboardButton(text="ᴄʜᴀɴɴᴇʟ", url="https://t.me/Arabc0de")], [InlineKeyboardButton(text="ᴛᴇᴋᴀɴ ᴀᴊᴀ", callback_data="helper")]]
             ),
         )
         return
@@ -99,7 +99,7 @@ async def on_plug_in_cb(_, callback_query: CallbackQuery):
     this_command = f"** 〆{str(modul_name).upper()} 〆**\n\n"
     for x in commands:
         this_command += f"**CMD:\n** `{str(x)}`\n** Fungsi:** `{str(commands[x])}`\n\n"
-    this_command += "© @amneseey0u"
+    this_command += "© @Arabc0de"
     bttn = [
         [InlineKeyboardButton(text="ʙᴀᴄᴋ", callback_data="reopen"), InlineKeyboardButton(text="ᴄʟᴏsᴇ", callback_data="close")],
     ]
