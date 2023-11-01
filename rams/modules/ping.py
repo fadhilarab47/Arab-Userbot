@@ -97,7 +97,7 @@ async def kping(client: Client, message: Message):
     end = datetime.now()
     duration = (end - start).microseconds / 1000
     await rams.edit(
-        f"**❏Uputt-Project**\n"
+        f"**❏Arab-Pyro**\n"
         f"** ├• PING   :** "
         f"`%sms` \n"
         f"** ├•  Uptime  :** "
@@ -137,7 +137,7 @@ async def pingme(client: Client, message: Message):
     end = datetime.now()
     duration = (end - start).microseconds / 1000
     await rams.edit(
-        f"**❏Uputt-Project**\n"
+        f"**❏Arab-Pyro**\n"
         f"** ├• PING   :** "
         f"`%sms` \n"
         f"** ├•  Uptime  :** "
