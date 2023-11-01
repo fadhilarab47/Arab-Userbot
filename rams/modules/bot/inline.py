@@ -66,7 +66,7 @@ async def alive_function(message: Message, answers):
     end = datetime.now()
     duration = (end - start).microseconds / 1000
     msg = (
-        f"❏  Uputt-Project!!\n"
+        f"❏  Arab-Pyro!!\n"
         f"├• PING: %sms\n"
         f"└• Uptime: </b> <code>{uptime}</code>" % (duration)
     )
@@ -88,7 +88,7 @@ async def alive_function(message: Message, answers):
 async def ping_function(message: Message, answers):
     msg = (
         f"Uputt-Project \n"
-        "ㅤ ❏ Status : Uputt-Project Aktif!!! \n"
+        "ㅤ ❏ Status : Arab-Pyro Aktif!!! \n"
         f"ㅤㅤ├ Modules: </b> <code>{len(modules)} </code> \n"
         f"ㅤㅤ├ Bot Version: {BOT_VER} \n"
         f"ㅤㅤ├ Branch: {branch} \n"
@@ -97,7 +97,7 @@ async def ping_function(message: Message, answers):
     )
     answers.append(
         InlineQueryResultArticle(
-            title="uputt",
+            title="Arab",
             description="Check Bot's Stats",
             thumb_url="https://telegra.ph/file/6d909b4a1b7b0385c1dfe.jpg",
             input_message_content=InputTextMessageContent(
@@ -113,12 +113,12 @@ async def ping_function(message: Message, answers):
 async def repo_function(message: Message, answers):
     msg = (
         f"╭╼━━━━━━━━━━━━━━━\n"
-        f"│   Uputt-Project \n"
+        f"│   Arab-Project \n"
         f"├╼━━━━━━━━━━━━━━━\n"
         f"│ Bot Version    : {BOT_VER}\n"
         f"│ Branch     : {branch}\n"
         f"╰╼━━━━━━━━━━━━━━━━\n"
-        f"©️ Uputt-Project"
+        f"©️ @SiArab_Support"
     )
     answers.append(
         InlineQueryResultArticle(
@@ -129,7 +129,7 @@ async def repo_function(message: Message, answers):
                 msg, parse_mode=ParseMode.HTML, disable_web_page_preview=True
             ),
             reply_markup=InlineKeyboardMarkup(
-                [[InlineKeyboardButton(text="Channel", url=f"https://t.me/amneseey0u")], [InlineKeyboardButton(text="Support", url=f"https://t.me/UputtSupport")]]
+                [[InlineKeyboardButton(text="Channel", url=f"https://t.me/Arabc0de")], [InlineKeyboardButton(text="Support", url=f"https://t.me/SiArab_Support")]]
             ),
         )
     )
