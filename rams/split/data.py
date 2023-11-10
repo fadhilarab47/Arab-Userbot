@@ -4,7 +4,7 @@ modules = CMD_HELP
 class Data:
 
     text_help_menu = (
-        f"**Menu Inline Uputt-Project**\n**Perintah :** ? ! . * , $"
+        f"**Menu Inline sɪ ᴧꝛᴧʙ-ᴜsᴇʀʙᴏᴛ**\n**Perintah :** ? ! . * , $"
         .replace(",", "")
         .replace("[", "")
         .replace("]", "")
