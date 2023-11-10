@@ -1,6 +1,10 @@
-# Uputt-Project〆 Telegram
+<p align="center">
+  <img src="https://telegra.ph//file/a995a2df70cfdb09a6dc3.jpg">
+</p>
 
-Uputt-Project is a modular telegram user that runs on Python3 with a pyrogram library.
+# SIARAB-USERBOT〆 Telegram
+
+SiArab-Userbot is a modular telegram user that runs on Python3 with a pyrogram library.
 
 I made this repository to have fun while helping you manage the group efficiently and to help reduce boredom when using telegram.
 
@@ -21,19 +25,19 @@ When you have installed this userbot, it means you are ready with the risks.
     
 > Anda memerlukan APP ID & API HASH Telegram untuk mengambil sesi Pyrogram. ambil APP ID dan API Hash di my.telegram.org
 - Generate Session via <a href="https://repl.it/@mrismanaziz/stringen?lite=1&outputonly=1">Repl</a>
-- Generate Session via <a href="https://t.me/NayaStringBot">Telegram String Generation Bot</a>
+- Generate Session via <a href="https://t.me/StringrabRobot">Telegram String Generation Bot</a>
 
 ## Okteto Deploy [Recomended if heroku not free]
   <a href="https://okteto.com">Click Here</a>
 
 ## VPS 
 ```
-- git clone https://github.com/izzy-adeeva/RamPyro-bot
-- cd RamPyro-bot
+- git clone https://github.com/fadhilarab47/Arab-Userbot
+- cd Arab-Userbot
 - pip install -U -r requirements.txt
 - cp sample-config.env .env
 - nano .env (isi vars)(save)
-- screen -S RamPyro-bot
+- screen -S Arab-Userbot
 - bash start
 - seduh kopi, bakar roko, nyender
 
@@ -42,8 +46,8 @@ When you have installed this userbot, it means you are ready with the risks.
 
 ## 🏷 Support
 
-- Follow Channel [@amneseey0i](https://t.me/amneseey0u) untuk info Update bot 
-- Gabung Group [@uputtsupport](https://t.me/uputtsupport) untuk diskusi, pelaporan bug, dan bantuan tentang PyroKar-Userbot.
+- Follow Channel [Arab Channel](https://t.me/Arabc0de) untuk info Update bot 
+- Gabung Group [Arab Support](https://t.me/SiArab_Support) untuk diskusi, pelaporan bug, dan bantuan tentang Arab-Userbot.
 
 ## 👨🏻‍💻 Credits
 -  [Dan](https://github.com/delivrance) for [Pyrogram](https://github.com/pyrogram/pyrogram)
