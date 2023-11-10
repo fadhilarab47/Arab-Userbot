@@ -37,8 +37,8 @@ async def _callbacks(_, callback_query: CallbackQuery):
     elif query == "close":
         if callback_query.from_user.id not in users:
            return
-        await app.edit_inline_text(callback_query.inline_message_id, f"Arab-Pyro \n"
-            "ㅤ❏  Status : Arab-Pyro Aktif!!! \n"
+        await app.edit_inline_text(callback_query.inline_message_id, f"sɪ ᴧꝛᴧʙ-ᴜsᴇʀʙᴏᴛ \n"
+            "ㅤ❏  Status : sɪ ᴧꝛᴧʙ-ᴜsᴇʀʙᴏᴛ Aktif!!! \n"
             f"ㅤㅤ├ Modules: </b> <code>{len(modules)} </code> \n"
             f"ㅤㅤ├ Bot Version: {BOT_VER} \n"
             f"ㅤㅤ├ Branch: {branch} \n"
