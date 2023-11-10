@@ -1,11 +1,11 @@
 {
-  "name": "Uputt-Project",
-  "description": "[Uputt-Project] is a modular telegram user that runs on Python3 with a pyrogram library. Powered by Uputt-Project.",
-  "logo": "https://telegra.ph/file/b42b7a4a22ba89287cad4.jpg",
+  "name": "SIARAB-USERBOT",
+  "description": "[SiArab-Userbot] is a modular telegram user that runs on Python3 with a pyrogram library. Powered by Arab-Userbot.",
+  "logo": "https://telegra.ph//file/ea39b52686ec35ed9950a.jpg",
   "stack": "heroku-22",
   "env": {
     "STRING_SESSION1": {
-      "description": "Dapatkan String Session Pyrogram di Grup » https://t.me/uputtsupport » Lalu ketik #string",
+      "description": "Dapatkan String Session Pyrogram di Grup » https://t.me/SiArab_Support » Lalu ketik #string",
       "required": true
     },
     "HEROKU_API_KEY": {
