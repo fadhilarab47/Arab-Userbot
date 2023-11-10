@@ -11,7 +11,7 @@ from .help import add_command_help
 
 @pyram("asupan", ram)
 async def asupan(client: Client, message: Message):
-    rams = await edit_or_reply(message, "`Wait a moment...`")
+    rams = await edit_or_reply(message, "`Wait a moment bree...`")
     await gather(
         rams.delete(),
         client.send_video(
@@ -34,7 +34,7 @@ async def asupan(client: Client, message: Message):
 
 @pyram("ayang", ram)
 async def ayang(client, message):
-    yanto = await message.reply("🔎 `Search Ayang...`")
+    yanto = await message.reply("🔎 `Lagi Nyari Ayang lu...`")
     pop = message.from_user.first_name
     ah = message.from_user.id
     await message.reply_photo(
@@ -55,7 +55,7 @@ async def ayang(client, message):
 
 @pyram(["ppcp", "couple"], ram)
 async def ppcp(client, message):
-    yanto = await message.reply("🔎 `Search PP Couple...`")
+    yanto = await message.reply("🔎 `Lagi Nyari PP Couple...`")
     message.from_user.first_name
     message.from_user.id
     await message.reply_photo(
@@ -76,7 +76,7 @@ async def ppcp(client, message):
 
 @pyram(["ppanime"], ram)
 async def ppanime(client, message):
-    yanto = await message.reply("🔎 `Search PP Anime...`")
+    yanto = await message.reply("🔎 `Lagi Nyari PP Anime...`")
     message.from_user.first_name
     message.from_user.id
     await message.reply_photo(
