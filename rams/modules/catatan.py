@@ -20,7 +20,7 @@ async def list_notes(client, message):
     await message.reply(msg)
 
 
-@pyram("dlt", ram)
+@pyram("apus", ram)
 async def remove_notes(client, message):
     notename = get_arg(message)
     user_id = message.from_user.id
