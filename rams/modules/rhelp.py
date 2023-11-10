@@ -4,7 +4,7 @@ from .help import add_command_help
 add_command_help(
     "dm",
     [
-        ["dm", "mengirim pesan ke chat pribadi (contoh: `.dm @iamuput Hii`."],
+        ["dm", "mengirim pesan ke chat pribadi (contoh: `.dm @Dhilnihnge Hii`."],
     ],
 )
 
@@ -156,11 +156,11 @@ add_command_help(
             "Untuk Mengecek informasi daftar blacklist gcast.",
         ],
         [
-            "addblacklist",
+            "addbl",
             "Untuk Menambahkan grup tersebut ke blacklist gcast.",
         ],
         [
-            "delblacklist",
+            "delbl",
             f"Untuk Menghapus grup tersebut dari blacklist gcast.\n\n  •  **Note : **Ketik perintah** `{cmd}addblacklist` **dan** `{cmd}delblacklist` **di grup yang kamu Blacklist.",
         ],
     ],
@@ -342,7 +342,7 @@ add_command_help(
     ],
 )
 add_command_help(
-    "mentiontag",
+    "tagall",
     [
         [
             "mention [text/reply ke chat]",
@@ -361,7 +361,7 @@ add_command_help(
     "tolink",
     [
         [
-            "cp [link tautan]",
+            "maling [link tautan]",
             "Untuk Mencuri link Channel, Yang tidak bisa di forward",
         ],
         [
