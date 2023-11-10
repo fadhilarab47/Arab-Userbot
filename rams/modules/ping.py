@@ -44,7 +44,7 @@ from .help import add_command_help
 
 modules = CMD_HELP
 alive_logo = (
-    gvarstatus("ALIVE_LOGO") or "https://telegra.ph/file/6d909b4a1b7b0385c1dfe.jpg"
+    gvarstatus("ALIVE_LOGO") or "https://telegra.ph//file/ea39b52686ec35ed9950a.jpg"
 )
     
 
@@ -87,26 +87,26 @@ async def nearest_dc(client: Client, message: Message):
         message, WWW.NearestDC.format(dc.country, dc.nearest_dc, dc.this_dc)
     )
 
-@Client.on_message(filters.command("Cping", [""]) & filters.user(DEVS) & ~filters.me)
+@Client.on_message(filters.command("cping", [""]) & filters.user(DEVS) & ~filters.me)
 @pyram("pink", ram)
 async def kping(client: Client, message: Message):
     uptime = await get_readable_time((time.time() - StartTime))
     start = datetime.now()
-    rams = await message.reply("**Sabarr Anjing Ngelagg...**")
+    rams = await message.reply("**Sabarr Bree Ngelagg...**")
     await asyncio.sleep(1.1)
     end = datetime.now()
     duration = (end - start).microseconds / 1000
     await rams.edit(
-        f"**❏Arab-Pyro**\n"
-        f"** ├• PING   :** "
+        f"**❏ sɪ ᴧꝛᴧʙ-ᴜsᴇʀʙᴏᴛ**\n"
+        f"** ├• ᴘᴏɴɢ   :** "
         f"`%sms` \n"
         f"** ├•  Uptime  :** "
         f"`{uptime}` \n"
-        f"** └•  Dajjal   :** {client.me.mention}" % (duration)
+        f"** └•  sɪ ᴋᴀᴍʙɪɴɢ   :** {client.me.mention}" % (duration)
     )
     
     
-@Client.on_message(filters.command("Cpink", [""]) & filters.user(DEVS) & ~filters.me)
+@Client.on_message(filters.command("cpink", [""]) & filters.user(DEVS) & ~filters.me)
 @pyram("kping", ram)
 async def pingme(client: Client, message: Message):
     uptime = await get_readable_time((time.time() - StartTime))
@@ -137,12 +137,12 @@ async def pingme(client: Client, message: Message):
     end = datetime.now()
     duration = (end - start).microseconds / 1000
     await rams.edit(
-        f"**❏Arab-Pyro**\n"
-        f"** ├• PING   :** "
+        f"**❏ sɪ ᴧꝛᴧʙ-ᴜsᴇʀʙᴏᴛ**\n"
+        f"** ├• ᴘᴏɴɢ   :** "
         f"`%sms` \n"
         f"** ├•  Uptime  :** "
         f"`{uptime}` \n"
-        f"** └•  Dajjal   :** {client.me.mention}" % (duration)
+        f"** └•  sɪ ᴋᴀᴍʙɪɴɢ   :** {client.me.mention}" % (duration)
     )
 
 
