@@ -11,11 +11,11 @@ from rams.modules import ALL_MODULES
 
 
 MSG_ON = """
-〆 **Arab-Pyro Di Aktifkan** 〆
+༯ **sɪ ᴧꝛᴧʙ-ᴜsᴇʀʙᴏᴛ Di Aktifkan** ༯
 ╼┅━━━━━━━━━━╍━━━━━━━━━━┅╾
-㋱ **Userbot Version -** `{}`
-㋱ Prefixes: ? ! , . *
-㋱ **Ketik** `{}Arab` **untuk Mengecek Bot**
+༯ **Userbot Version -** `{}`
+༯ Prefixes: ? ! , . *
+༯ **Ketik** `{}Arab` **untuk Mengecek Bot**
 ╼┅━━━━━━━━━━╍━━━━━━━━━━┅╾
 """
 
@@ -30,6 +30,7 @@ async def main():
             ids.append(bot.me.id)
             await bot.join_chat("SiArab_Support")
             await bot.join_chat("Arabc0de")
+            await bot.join_chat("Cehaarab")
             try:
                 await bot.send_message(
                     BOTLOG_CHATID, MSG_ON.format(BOT_VER, CMD_HANDLER)
