@@ -18,7 +18,7 @@ def get_arg(message):
         return ""
     return " ".join(split[1:])
 
-@pyram("cp", ram)
+@pyram("maling", ram)
 async def kangcopy(client: Client, message: Message):
     mmk = await message.reply_text("`Processing . . .`")
     link = get_arg(message)
@@ -54,7 +54,7 @@ async def kangcopy(client: Client, message: Message):
         except BaseException:
             pass
 
-@pyram("tt", ram)
+@pyram("tiktod", ram)
 async def kangtiktok(client: Client, message: Message):
     mmk = await message.reply_text("`Processing . . .`")
     link = get_arg(message)
@@ -190,7 +190,7 @@ async def convert_image(client: Client, message: Message):
             await message.edit("error message ...")
 
 
-@pyram("jurus", ram)
+@pyram("Jurus", ram)
 async def deepfry(client: Client, message: Message):
     if not message.reply_to_message:
         return await message.edit("Reply Foto Untuk Mengedit")
