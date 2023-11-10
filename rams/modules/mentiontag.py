@@ -19,7 +19,7 @@ from .help import add_command_help
 spam_chats = []
 
 
-@pyram("mention", ram)
+@pyram("tagall", ram)
 async def mentionall(client: Client, message: Message):
     await message.delete()
     chat_id = message.chat.id
