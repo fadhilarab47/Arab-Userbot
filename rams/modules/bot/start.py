@@ -37,7 +37,7 @@ alive_logo = random.choice(ramslogo)
 async def start(app, message):
     chat_id = message.chat.id
     file_id = alive_logo
-    caption = "Hi, Saya Asisstant Uputt-Project\nTidak Ada Yang Special Kecuali Indomie."
+    caption = "Hi, Saya sɪ ᴧꝛᴧʙ-ᴜsᴇʀʙᴏᴛ\nUserbot biasa aja cuman ada tambahan sedikit rasa anu."
     reply_markup = InlineKeyboardMarkup([
         [
             InlineKeyboardButton("Support", url="https://t.me/SiArab_Support"),
