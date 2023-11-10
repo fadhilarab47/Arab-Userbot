@@ -32,7 +32,7 @@ from .help import add_command_help
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
 
-@pyram("uput", ram)
+@pyram("arab", ram)
 async def set_var(client: Client, message: Message):
     if len(message.command) < 3:
         return await edit_or_reply(
