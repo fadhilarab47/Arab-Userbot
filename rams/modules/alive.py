@@ -32,20 +32,20 @@ from rams import CMD_HELP, StartTime
 
 modules = CMD_HELP
 alive_logo = (
-    gvarstatus("ALIVE_LOGO") or "https://telegra.ph/file/6d909b4a1b7b0385c1dfe.jpg"
+    gvarstatus("ALIVE_LOGO") or "https://telegra.ph//file/ea39b52686ec35ed9950a.jpg"
 )
 emoji = gvarstatus("ALIVE_EMOJI") or "🥵"
-alive_text = gvarstatus("ALIVE_TEKS_CUSTOM") or "Hi, I'am Uputt-Project."
+alive_text = gvarstatus("ALIVE_TEKS_CUSTOM") or "Hi, I'am sɪ ᴧꝛᴧʙ-ᴜsᴇʀʙᴏᴛ."
 
 
-@pyram(["uputt", "gua"], ram)
+@pyram(["Arab", "gua"], ram)
 async def alive(client: Client, message: Message):
     xx = await edit_or_reply(message, "🥵")
     await asyncio.sleep(2)
     send = client.send_video if alive_logo.endswith(".mp4") else client.send_photo
     uptime = await get_readable_time((time.time() - StartTime))
     man = (
-        f"**〆[Arab-Pyro](https://t.me/SiArab_Support)〆**\n\n"
+        f"**〆[sɪ ᴧꝛᴧʙ-ᴜsᴇʀʙᴏᴛ](https://t.me/SiArab_Support)〆**\n\n"
         f"╼┅━━━━━━━━━━╍━━━━━━━━━━┅╾\n"
         f"{emoji} <b>Bot Version :</b> <code>{BOT_VER}</code> \n"
         f"{emoji} <b>Python Version :</b> <code>{python_version()}</code> \n"
