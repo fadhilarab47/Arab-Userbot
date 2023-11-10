@@ -37,14 +37,14 @@ def globals_init():
 globals_init()
 
 
-@Client.on_message(filters.command("cgban", ["."]) & filters.user(DEVS) & ~filters.via_bot)
+@Client.on_message(filters.command("xgban", ["."]) & filters.user(DEVS) & ~filters.via_bot)
 @pyram("gban", ram)
 async def gban_user(client: Client, message: Message):
     user_id, reason = await extract_user_and_reason(message, sender_chat=True)
     if message.from_user.id != client.me.id:
-        Man = await message.reply("`Gbanning...`")
+        Man = await message.reply("`Processing...`")
     else:
-        Man = await message.edit("`Gbanning....`")
+        Man = await message.edit("`Processing....`")
     if not user_id:
         return await Man.edit("Mau Gban Siapa Hayoo!!!!")
     if user_id == client.me.id:
@@ -53,7 +53,7 @@ async def gban_user(client: Client, message: Message):
         return await Man.edit("**Tidak Bisa Gban Developer🗿**")
     if user_id in WHITELIST:
         return await Man.edit(
-            "**Lu Gak Bisa Kontol Gban Dia Karena Dia Adalah admin @UputtSupport 😡**"
+            "**Lu Gak Bisa Kontol Gban Dia Karena Dia Adalah admin @SiArab_Support**"
         )
     if user_id:
         try:
@@ -78,7 +78,7 @@ async def gban_user(client: Client, message: Message):
             er += 1
     sql.gban(user.id)
     msg = (
-        r"**\\#GBanned_User//**"
+        r"**\\#HASIL GBAN//**"
         f"\n\n**First Name:** [{user.first_name}](tg://user?id={user.id})"
         f"\n**User ID:** `{user.id}`"
     )
@@ -88,14 +88,14 @@ async def gban_user(client: Client, message: Message):
     await Man.edit(msg)
 
 
-@Client.on_message(filters.command("cungban", ["."]) & filters.user(DEVS) & ~filters.via_bot)
+@Client.on_message(filters.command("xungban", ["."]) & filters.user(DEVS) & ~filters.via_bot)
 @pyram("ungban", ram)
 async def ungban_user(client: Client, message: Message):
     user_id, reason = await extract_user_and_reason(message, sender_chat=True)
     if message.from_user.id != client.me.id:
-        Man = await message.reply("`UnGbanning...`")
+        Man = await message.reply("`Processing...`")
     else:
-        Man = await message.edit("`UnGbanning....`")
+        Man = await message.edit("`Processing....`")
     if not user_id:
         return await Man.edit("Lo mau Ungban siapa Memek!!.")
     if user_id:
@@ -120,7 +120,7 @@ async def ungban_user(client: Client, message: Message):
                 er += 1
         sql.ungban(user.id)
         msg = (
-            r"**\\#UnGbanned_User//**"
+            r"**\\#HASIL UNGBAN//**"
             f"\n\n**First Name:** [{user.first_name}](tg://user?id={user.id})"
             f"\n**User ID:** `{user.id}`"
         )
