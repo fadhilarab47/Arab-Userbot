@@ -66,7 +66,7 @@ async def alive_function(message: Message, answers):
     end = datetime.now()
     duration = (end - start).microseconds / 1000
     msg = (
-        f"❏  Arab-Pyro!!\n"
+        f"❏ sɪ ᴧꝛᴧʙ-ᴜsᴇʀʙᴏᴛ!!\n"
         f"├• PING: %sms\n"
         f"└• Uptime: </b> <code>{uptime}</code>" % (duration)
     )
@@ -79,7 +79,7 @@ async def alive_function(message: Message, answers):
                 msg, parse_mode=ParseMode.HTML, disable_web_page_preview=True
             ),
             reply_markup=InlineKeyboardMarkup(
-                [[InlineKeyboardButton("「 ᴅᴀᴊᴊᴀʟ 」", url=f"tg://openmessage?user_id={message.from_user.id}")]]
+                [[InlineKeyboardButton("「 sɪ ᴧꝛᴧʙ 」", url=f"tg://openmessage?user_id={message.from_user.id}")]]
             ),
         )
     )
@@ -87,8 +87,8 @@ async def alive_function(message: Message, answers):
 
 async def ping_function(message: Message, answers):
     msg = (
-        f"Uputt-Project \n"
-        "ㅤ ❏ Status : Arab-Pyro Aktif!!! \n"
+        f"sɪ ᴧꝛᴧʙ-ᴜsᴇʀʙᴏᴛ \n"
+        "ㅤ ❏ Status : sɪ ᴧꝛᴧʙ-ᴜsᴇʀʙᴏᴛ Aktif!!! \n"
         f"ㅤㅤ├ Modules: </b> <code>{len(modules)} </code> \n"
         f"ㅤㅤ├ Bot Version: {BOT_VER} \n"
         f"ㅤㅤ├ Branch: {branch} \n"
@@ -113,7 +113,7 @@ async def ping_function(message: Message, answers):
 async def repo_function(message: Message, answers):
     msg = (
         f"╭╼━━━━━━━━━━━━━━━\n"
-        f"│   Arab-Project \n"
+        f"│   sɪ ᴧꝛᴧʙ-ᴜsᴇʀʙᴏᴛ \n"
         f"├╼━━━━━━━━━━━━━━━\n"
         f"│ Bot Version    : {BOT_VER}\n"
         f"│ Branch     : {branch}\n"
