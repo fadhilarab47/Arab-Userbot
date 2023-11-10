@@ -52,7 +52,7 @@ def cb_wrapper(func):
         users = list_users
         if cb.from_user.id not in users:
             await cb.answer(
-                "Anda Harus Menjadi Pengguna Arab-Pyro Terlebih Dahulu🤪!!!",
+                "Anda Harus Menjadi Pengguna sɪ ᴧꝛᴧʙ-ᴜsᴇʀʙᴏᴛ Terlebih Dahulu🤪!!!",
                 cache_time=0,
                 show_alert=True,
             )
