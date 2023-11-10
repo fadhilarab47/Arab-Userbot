@@ -30,7 +30,7 @@ async def afk(client: Client, message: Message):
     if len(message.text.split()) >= 2:
         set_afk(True, message.text.split(None, 1)[1])
         await message.edit(
-            "〆 {} <b>Telah AFK!</b>\n└ <b>Karena:</b> <code>{}</code>".format(
+            "〆 {} <b>Telah Meningalkan Lane!</b>\n└ <b>Karena:</b> <code>{}</code>".format(
                 mention_markdown(message.from_user.id, message.from_user.first_name),
                 message.text.split(None, 1)[1],
             )
@@ -38,7 +38,7 @@ async def afk(client: Client, message: Message):
     else:
         set_afk(True, "")
         await message.edit(
-            "〆 {} <b>Telah AFK</b> ".format(
+            "〆 {} <b>Telah Meninggalkan Lane</b> ".format(
                 mention_markdown(message.from_user.id, message.from_user.first_name)
             )
         )
@@ -61,13 +61,13 @@ async def afk_mentioned(client: Client, message: Message):
         AFK_RESTIRECT[cid] = int(time.time()) + DELAY_TIME
         if get["reason"]:
             await message.reply(
-                "〆 {} <b>Sedang AFK!</b>\n└ <b>Karena:</b> <code>{}</code>".format(
+                "〆 {} <b>Sedang Meninggalkan Lane!</b>\n└ <b>Karena:</b> <code>{}</code>".format(
                     client.me.mention, get["reason"]
                 )
             )
         else:
             await message.reply(
-                f"<b>Maaf</b> {client.me.first_name} <b>Sedang AFK!</b>"
+                f"<b>Maaf</b> {client.me.first_name} <b>Sedang Meninggalkan Lane!</b>"
             )
 
         _, message_type = get_message_type(message)
@@ -109,10 +109,10 @@ async def no_longer_afk(client: Client, message: Message):
     if get and get["afk"]:
         set_afk(False, "")
         try:
-            await client.send_message(BOTLOG_CHATID, "Anda sudah tidak lagi AFK!")
+            await client.send_message(BOTLOG_CHATID, "Anda sudah tidak lagi Meninggalkan Lane!")
         except BaseException:
             pass
-        text = "<b>Total {} Mention Saat Sedang AFK<b>\n".format(len(MENTIONED))
+        text = "<b>Total {} Mention Saat Sedang Meninggalkan Lane<b>\n".format(len(MENTIONED))
         for x in MENTIONED:
             msg_text = x["text"]
             if len(msg_text) >= 11:
