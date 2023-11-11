@@ -1,13 +1,12 @@
+<img src="https://telegra.ph//file/ea39b52686ec35ed9950a.jpg">
+
+<p align="center"> ⛔️ 𝗦𝗜𝗔𝗥𝗔𝗕-𝗨𝗦𝗘𝗥𝗕𝗢𝗧 ⛔️ </p>
+
+- UBOT BIASA GAK ADA YG ISTIMEWA, CUMAN ADA TAMBAHAN RASA ANU
+
 <p align="center">
-  <img src="https://telegra.ph//file/a995a2df70cfdb09a6dc3.jpg">
-</p>
-
-# SIARAB-USERBOT〆 Telegram
-
-SiArab-Userbot is a modular telegram user that runs on Python3 with a pyrogram library.
-
-I made this repository to have fun while helping you manage the group efficiently and to help reduce boredom when using telegram.
-
+    <a href="https://www.python.org/" alt="made-with-python"> <img src="https://img.shields.io/badge/Made%20with-Python-black.svg?style=flat-square&logo=python&logoColor=blue&color=red" /></a>
+  
 ## ⚠️ FOR YOU INFORMATION
 
 ```
