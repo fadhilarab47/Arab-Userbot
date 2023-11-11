@@ -8,25 +8,17 @@
 <a href="https://t.me/Dhilnihnge"> <img src="https://img.shields.io/badge/Dhil-SiArab-blue?&logo=telegram" alt="SiArab on Telegram" /> </a><br>
 <a href="https://python-telegram-bot.org"> <img src="https://img.shields.io/badge/PTB-13.13-white?&style=flat-round&logo=github" alt="Python Telegram Bot" /> </a>
 <a href="https://github.com/fadhilarab47"><img alt="Code style: Github" src="https://img.shields.io/badge/code%20style-black-000000.svg"></a><br>
-<a href="[https://link.dana.id/qr/3akqs26o"> <img src="https://img.shields.io/badge/Join-donasi%20dana-blue?style=for-the-badge&logo=DANA](https://img.shields.io/badge/Join-donasi%20dana-blue?style=for-the-badge&logo=DANA" alt="Dana" /> </a><br>
+
   
-## ⚠️ FOR YOU INFORMATION
 
-```
-I am not responsible for the abuse of this bot.
-Use this bot with your own risk.
-Use this userbot wisely.
-When you have installed this userbot, it means you are ready with the risks.
-```
-
-<h3 align="center">Klik Tombol di Bawah ini untuk Deploy di Heroku</h3>
-<a href="https://dashboard.heroku.com/new?button-url=https%3A%2F%2Fgithub.com%2iamuput%2FUputt-Project&template=https%3A%2F%2Fgithub.com%2Fiamuput%2FUputt-Project"><img src="https://www.herokucdn.com/deploy/button.svg"></a>
+## Deploy 𝗦𝗜𝗔𝗥𝗔𝗕-𝗨𝗦𝗘𝗥𝗕𝗢𝗧 on Heroku
+<h3 align="center">Click The Button</h3>
+<a href="https://dashboard.heroku.com/new?button-url=https%3A%2F%2Fgithub.com%2Ffadhilarab47%2FArab-Userbot&template=https%3A%2F%2Fgithub.com%2Ffadhilarab47%2FArab-Userbot"><img src="https://www.herokucdn.com/deploy/button.svg"></a>
 </div>
 
 ## 🖇 Generating Pyrogram String Session
     
 > Anda memerlukan APP ID & API HASH Telegram untuk mengambil sesi Pyrogram. ambil APP ID dan API Hash di my.telegram.org
-- Generate Session via <a href="https://repl.it/@mrismanaziz/stringen?lite=1&outputonly=1">Repl</a>
 - Generate Session via <a href="https://t.me/StringrabRobot">Telegram String Generation Bot</a>
 
 ## Okteto Deploy [Recomended if heroku not free]
@@ -46,10 +38,25 @@ When you have installed this userbot, it means you are ready with the risks.
 (tested on ubuntu 20-22 / python 3.9 - 3.10.14)
 ```
 
-## 🏷 Support
+## Disclaimer 
 
-- Follow Channel [Arab Channel](https://t.me/Arabc0de) untuk info Update bot 
-- Gabung Group [Arab Support](https://t.me/SiArab_Support) untuk diskusi, pelaporan bug, dan bantuan tentang Arab-Userbot.
+
+```console
+      ⚠️ WARNING ⚠️
+
+AKUN TELEGRAM ANDA BISA AJA KE DEAK.
+DAN NGGA AKAN ADA PERTANGGUNGJAWABAN DARI KAMI
+BOT INI CUMA SEKEDAR HOBBY DAN MEMBANTU KALIAN MEMILIKI USERBOT SENDIRI,
+      
+DAN SEMUA INI GRATIS !!!!!
+```
+
+## 🏷 Support
+<p align="center">𝐒𝐮𝐩𝐩𝐨𝐫𝐭 / 𝐂𝐡𝐚𝐧𝐧𝐞𝐥 --> </p>
+
+<p align="center"><a href="https://t.me/SiArab_Support><img src="https://img.shields.io/badge/Telegram-Support-black?&style=for-the-badge&logo=telegram" width="220" height="38.45"></a></p>
+<p align="center"><a href="https://t.me/Cehaarab"><img src="https://img.shields.io/badge/Telegram-Support-black?&style=for-the-badge&logo=telegram" width="220" height="38.45"></a></p>
+
 
 ## 👨🏻‍💻 Credits
 -  [Dan](https://github.com/delivrance) for [Pyrogram](https://github.com/pyrogram/pyrogram)
