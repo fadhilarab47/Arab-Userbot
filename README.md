@@ -2,10 +2,15 @@
 
 <p align="center"> ⛔️ 𝗦𝗜𝗔𝗥𝗔𝗕-𝗨𝗦𝗘𝗥𝗕𝗢𝗧 ⛔️ </p>
 
-- UBOT BIASA GAK ADA YG ISTIMEWA, CUMAN ADA TAMBAHAN RASA ANU
+- Baru terjun jangan di hujatya puh
 
 <p align="center">
-    <a href="https://www.python.org/" alt="made-with-python"> <img src="https://img.shields.io/badge/Made%20with-Python-black.svg?style=flat-square&logo=python&logoColor=blue&color=red" /></a>
+<a href="https://t.me/Dhilnihnge"> <img src="https://img.shields.io/badge/Dhil-SiArab-blue?&logo=telegram" alt="SiArab on Telegram" /> </a><br>
+<a href="https://python-telegram-bot.org"> <img src="https://img.shields.io/badge/PTB-13.13-white?&style=flat-round&logo=github" alt="Python Telegram Bot" /> </a>
+<a href="https://github.com/psf/black"><img alt="Code style: black" src="https://img.shields.io/badge/code%20style-black-000000.svg"></a><br>
+<a href="https://docs.telethon.dev"> <img src="https://img.shields.io/badge/Telethon-1.24.0-red?&style=flat-round&logo=github" alt="Telethon" /> </a>
+<a href="[https://docs.python.org"> <img src="https://img.shields.io/badge/Join-donasi%20dana-blue?style=for-the-badge&logo=DANA](https://img.shields.io/badge/Join-donasi%20dana-blue?style=for-the-badge&logo=DANA" alt="Dana" /> </a><br>
+<a href="https://makeapullrequest.com"> <img src="https://img.shields.io/badge/PRs-Welcome-blue.svg?style=flat-round" alt="PRs" /> </a>
   
 ## ⚠️ FOR YOU INFORMATION
 
