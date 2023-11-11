@@ -7,7 +7,7 @@
 <p align="center">
 <a href="https://t.me/Dhilnihnge"> <img src="https://img.shields.io/badge/Dhil-SiArab-blue?&logo=telegram" alt="SiArab on Telegram" /> </a><br>
 <a href="https://python-telegram-bot.org"> <img src="https://img.shields.io/badge/PTB-13.13-white?&style=flat-round&logo=github" alt="Python Telegram Bot" /> </a>
-<a href="https://github.com/psf/black"><img alt="Code style: black" src="https://img.shields.io/badge/code%20style-black-000000.svg"></a><br>
+<a href="https://github.com/fadhilarab47"><img alt="Code style: black" src="https://img.shields.io/badge/code%20style-black-000000.svg"></a><br>
 <a href="[https://link.dana.id/qr/3akqs26o"> <img src="https://img.shields.io/badge/Join-donasi%20dana-blue?style=for-the-badge&logo=DANA](https://img.shields.io/badge/Join-donasi%20dana-blue?style=for-the-badge&logo=DANA" alt="Dana" /> </a><br>
   
 ## ⚠️ FOR YOU INFORMATION
