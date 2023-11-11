@@ -2,7 +2,7 @@
 
 <p align="center"> ⛔️ 𝗦𝗜𝗔𝗥𝗔𝗕-𝗨𝗦𝗘𝗥𝗕𝗢𝗧 ⛔️ </p>
 
-- Baru terjun jangan di hujatya puh
+- Baru terjun jangan di hujat ya puh
 
 <p align="center">
 <a href="https://t.me/Dhilnihnge"> <img src="https://img.shields.io/badge/Dhil-SiArab-blue?&logo=telegram" alt="SiArab on Telegram" /> </a><br>
