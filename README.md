@@ -54,8 +54,8 @@ DAN SEMUA INI GRATIS !!!!!
 ## 🏷 Support
 <p align="center">𝐒𝐮𝐩𝐩𝐨𝐫𝐭 / 𝐂𝐡𝐚𝐧𝐧𝐞𝐥 --> </p>
 
-<p align="center"><a href="https://t.me/SiArab_Support"><img src="https://img.shields.io/badge/Telegram-Support-black?&style=for-the-badge&logo=telegram" width="220" height="38.45"></a></p>
-<p align="center"><a href="https://t.me/Cehaarab"><img src="https://img.shields.io/badge/Telegram-Support-black?&style=for-the-badge&logo=telegram" width="220" height="38.45"></a></p>
+<p align="center"><a href="https://t.me/SiArab_Support"><img src="https://img.shields.io/badge/Telegram-Group-black?&style=for-the-badge&logo=telegram" width="220" height="38.45"></a></p>
+<p align="center"><a href="https://t.me/Cehaarab"><img src="https://img.shields.io/badge/Telegram-Channel-black?&style=for-the-badge&logo=telegram" width="220" height="38.45"></a></p>
 
 
 ## 👨🏻‍💻 Credits
